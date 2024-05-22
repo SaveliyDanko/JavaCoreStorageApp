@@ -1,3 +1,4 @@
-./Client/target
-./Server/target
-./Common/terget
+Client/target
+Server/target
+Common/terget
+.idea
