@@ -1,0 +1,1014 @@
+2024-05-23 03:23:44 DEBUG ServerApp:11 - This is a debug message
+2024-05-23 03:23:44 INFO  ServerApp:12 - This is an info message
+2024-05-23 03:23:44 WARN  ServerApp:13 - This is a warn message
+2024-05-23 03:23:44 ERROR ServerApp:14 - This is an error message
+2024-05-23 03:23:44 FATAL ServerApp:15 - This is a fatal message
+2024-05-23 03:27:32 ERROR SQLDataBase:32 - Data Base Connection
+2024-05-23 03:29:05 INFO  SQLDataBase:32 - Data Base Connection successfully
+2024-05-23 03:32:05 INFO  SQLDataBase:32 - Data Base connecting successfully
+2024-05-23 03:32:05 INFO  SQLDataBase:39 - Data Base disconnecting successfully
+2024-05-23 18:06:05 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-23 18:06:57 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-23 18:06:57 INFO  SQLDataBase:29 - Create tables successfully
+2024-05-23 18:06:57 INFO  SQLDataBase:42 - Data Base disconnecting successfully
+2024-05-23 18:22:30 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-23 18:22:30 INFO  SQLDataBase:31 - Create tables successfully
+2024-05-23 18:22:30 INFO  SQLDataBase:42 - Data Base disconnecting successfully
+2024-05-23 18:23:13 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-23 18:23:13 INFO  SQLDataBase:31 - Create tables successfully
+2024-05-23 18:23:13 INFO  SQLDataBase:48 - Add item successfully
+2024-05-23 18:23:13 INFO  SQLDataBase:42 - Data Base disconnecting successfully
+2024-05-23 18:25:36 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-23 18:25:36 INFO  SQLDataBase:31 - Create tables successfully
+2024-05-23 18:25:36 ERROR SQLDataBase:65 - ERROR: syntax error at or near "VALUES"
+  Position: 56
+2024-05-23 18:25:36 INFO  SQLDataBase:48 - Add item successfully
+2024-05-23 18:25:36 INFO  SQLDataBase:42 - Data Base disconnecting successfully
+2024-05-23 18:26:05 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-23 18:26:05 INFO  SQLDataBase:31 - Create tables successfully
+2024-05-23 18:26:05 INFO  SQLDataBase:62 - Добавлено новых записей: 1
+2024-05-23 18:26:05 INFO  SQLDataBase:48 - Add item successfully
+2024-05-23 18:26:05 INFO  SQLDataBase:42 - Data Base disconnecting successfully
+2024-05-24 03:25:05 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 03:25:05 ERROR SQLDataBase:59 - ERROR: syntax error at or near "NOT"
+  Position: 16
+2024-05-24 03:25:05 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 03:25:05 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 03:25:05 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 03:25:20 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 03:25:20 ERROR SQLDataBase:59 - ERROR: syntax error at or near "NOT"
+  Position: 16
+2024-05-24 03:25:20 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 03:25:20 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 03:27:01 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 03:27:01 ERROR SQLDataBase:59 - ERROR: syntax error at or near "NOT"
+  Position: 16
+2024-05-24 03:27:01 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 03:27:01 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 03:29:14 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 03:29:14 ERROR SQLDataBase:61 - ERROR: syntax error at or near "NOT"
+  Position: 16
+2024-05-24 03:29:14 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 03:29:14 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 03:30:12 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 03:30:12 ERROR SQLDataBase:61 - ERROR: syntax error at or near "NOT"
+  Position: 16
+2024-05-24 03:30:12 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 03:30:12 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 03:31:10 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 03:31:10 ERROR SQLDataBase:61 - ERROR: syntax error at or near "NOT"
+  Position: 16
+2024-05-24 03:31:10 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 03:31:10 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 03:32:02 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 03:32:02 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 03:32:02 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:08:36 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:08:36 ERROR SQLDataBase:64 - ERROR: type "viewtype" already exists
+2024-05-24 04:08:36 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:08:36 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:10:08 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:10:08 ERROR SQLDataBase:72 - ERROR: syntax error at or near "FOREIGN"
+  Position: 202
+2024-05-24 04:10:08 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:10:08 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:10:50 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:10:50 ERROR SQLDataBase:72 - ERROR: syntax error at or near "FOREIGN"
+  Position: 202
+2024-05-24 04:10:50 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:10:50 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:11:33 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:11:33 ERROR SQLDataBase:73 - ERROR: syntax error at end of input
+  Position: 97
+2024-05-24 04:11:33 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:11:33 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:12:06 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:12:06 ERROR SQLDataBase:73 - ERROR: syntax error at or near "FOREIGN"
+  Position: 202
+2024-05-24 04:12:06 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:12:06 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:13:12 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:13:12 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:13:12 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:13:31 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:13:31 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:13:31 ERROR SQLDataBase:124 - ERROR: column "house_name" of relation "coordinates" does not exist
+  Position: 26
+2024-05-24 04:13:31 ERROR SQLDataBase:100 - Can't infer the SQL type to use for an instance of java.time.ZonedDateTime. Use setObject() with an explicit Types value to specify the type to use.
+2024-05-24 04:13:31 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:13:31 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:14:29 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:14:29 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:14:29 ERROR SQLDataBase:124 - ERROR: column "house_name" of relation "coordinates" does not exist
+  Position: 26
+2024-05-24 04:14:29 ERROR SQLDataBase:100 - Can't infer the SQL type to use for an instance of java.time.ZonedDateTime. Use setObject() with an explicit Types value to specify the type to use.
+2024-05-24 04:14:29 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:14:29 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:15:26 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:15:26 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:15:26 ERROR SQLDataBase:100 - Can't infer the SQL type to use for an instance of java.time.ZonedDateTime. Use setObject() with an explicit Types value to specify the type to use.
+2024-05-24 04:15:26 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:15:26 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:17:40 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:17:40 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:17:40 ERROR SQLDataBase:100 - Cannot cast an instance of java.time.ZonedDateTime to type Types.TIMESTAMP_WITH_TIMEZONE
+2024-05-24 04:17:40 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:17:40 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:19:10 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:19:10 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:19:10 ERROR SQLDataBase:103 - Cannot cast an instance of java.lang.String to type Types.TIMESTAMP_WITH_TIMEZONE
+2024-05-24 04:19:10 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:19:10 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:19:59 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:19:59 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:19:59 ERROR SQLDataBase:100 - Cannot cast an instance of java.time.ZonedDateTime to type Types.TIMESTAMP_WITH_TIMEZONE
+2024-05-24 04:19:59 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:19:59 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:21:52 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:21:52 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:21:52 ERROR SQLDataBase:102 - Can't infer the SQL type to use for an instance of com.savadanko.common.models.View. Use setObject() with an explicit Types value to specify the type to use.
+2024-05-24 04:21:52 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:21:52 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:23:22 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:23:22 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:23:22 ERROR SQLDataBase:102 - Can't infer the SQL type to use for an instance of com.savadanko.common.models.Transport. Use setObject() with an explicit Types value to specify the type to use.
+2024-05-24 04:23:22 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:23:22 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:23:32 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:23:32 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:23:32 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:23:32 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:24:25 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:24:25 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:24:25 ERROR SQLDataBase:104 - ERROR: column "owner" of relation "flats" does not exist
+  Position: 87
+2024-05-24 04:24:25 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:24:25 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:25:45 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:25:45 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:25:45 ERROR SQLDataBase:104 - ERROR: column "owner" of relation "flats" does not exist
+  Position: 87
+2024-05-24 04:25:45 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:25:45 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:28:10 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:28:10 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:28:10 ERROR SQLDataBase:104 - ERROR: column "view" is of type viewtype but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 121
+2024-05-24 04:28:10 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:28:10 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:31:36 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:31:36 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:31:36 ERROR SQLDataBase:104 - ERROR: syntax error at or near "::"
+  Position: 74
+2024-05-24 04:31:36 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:31:36 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:32:09 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:32:09 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:32:09 ERROR SQLDataBase:104 - ERROR: syntax error at or near "::"
+  Position: 74
+2024-05-24 04:32:09 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:32:09 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:33:22 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:33:22 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:33:22 ERROR SQLDataBase:90 - ERROR: column "view" is of type viewtype but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 121
+2024-05-24 04:33:22 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:33:22 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:36:05 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:36:05 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:36:05 ERROR SQLDataBase:90 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_house_id_fkey"
+  Detail: Key (house_id)=(0) is not present in table "houses".
+2024-05-24 04:36:05 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:36:05 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:38:24 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:38:24 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:38:24 ERROR SQLDataBase:90 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_house_id_fkey"
+  Detail: Key (house_id)=(0) is not present in table "houses".
+2024-05-24 04:38:24 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:38:24 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:44:09 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:44:09 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:44:09 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:44:09 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:45:49 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:45:49 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:45:50 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:45:50 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:45:52 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:45:52 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:45:52 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:45:52 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:45:54 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:45:54 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:45:54 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:45:54 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:54:30 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:54:30 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:54:31 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:54:31 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:54:48 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:54:48 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:54:48 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:54:48 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:54:50 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:54:50 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:54:50 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:54:50 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 04:54:57 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 04:54:57 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 04:54:57 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 04:54:57 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 05:05:42 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 05:05:42 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 05:05:42 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 05:05:42 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 05:07:49 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 05:07:49 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 05:07:49 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 05:07:49 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-24 05:09:04 INFO  SQLDataBase:33 - Data Base connecting successfully
+2024-05-24 05:09:04 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-24 05:09:04 INFO  SQLDataBase:49 - Add item successfully
+2024-05-24 05:09:04 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-26 02:40:34 INFO  SQLDataBase:35 - Data Base connecting successfully
+2024-05-26 02:40:34 ERROR SQLDataBase:63 - ERROR: there is no unique constraint matching given keys for referenced table "users"
+org.postgresql.util.PSQLException: ERROR: there is no unique constraint matching given keys for referenced table "users"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLObjectBuilder.java:60) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:36) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:29) [classes/:?]
+2024-05-26 02:40:34 INFO  SQLDataBase:37 - Create tables successfully
+2024-05-26 02:40:34 ERROR SQLDataBase:225 - ERROR: relation "flats" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLObjectBuilder.java:222) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLObjectBuilder.java:71) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:49) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:30) [classes/:?]
+2024-05-26 02:40:34 INFO  SQLDataBase:50 - Add item successfully
+2024-05-26 02:40:34 INFO  SQLDataBase:55 - Read object with id = 1
+2024-05-26 02:40:34 ERROR SQLDataBase:91 - ERROR: relation "flats" does not exist
+  Position: 15
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readObject(SQLObjectBuilder.java:81) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:56) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:31) [classes/:?]
+2024-05-26 02:40:34 INFO  SQLDataBase:44 - Data Base disconnecting successfully
+2024-05-26 02:45:02 INFO  SQLDataBase:35 - Data Base connecting successfully
+2024-05-26 02:45:02 ERROR SQLDataBase:63 - ERROR: there is no unique constraint matching given keys for referenced table "users"
+org.postgresql.util.PSQLException: ERROR: there is no unique constraint matching given keys for referenced table "users"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLObjectBuilder.java:60) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:36) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:29) [classes/:?]
+2024-05-26 02:45:02 INFO  SQLDataBase:37 - Create tables successfully
+2024-05-26 02:45:02 ERROR SQLDataBase:225 - ERROR: relation "flats" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLObjectBuilder.java:222) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLObjectBuilder.java:71) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:49) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:30) [classes/:?]
+2024-05-26 02:45:02 INFO  SQLDataBase:50 - Add item successfully
+2024-05-26 02:45:02 INFO  SQLDataBase:55 - Read object with id = 1
+2024-05-26 02:45:02 ERROR SQLDataBase:91 - ERROR: relation "flats" does not exist
+  Position: 15
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readObject(SQLObjectBuilder.java:81) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:56) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:31) [classes/:?]
+2024-05-26 02:45:02 INFO  SQLDataBase:44 - Data Base disconnecting successfully
+2024-05-26 02:45:55 INFO  SQLDataBase:35 - Data Base connecting successfully
+2024-05-26 02:45:55 INFO  SQLDataBase:37 - Create tables successfully
+2024-05-26 02:45:55 ERROR SQLDataBase:225 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLObjectBuilder.java:222) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLObjectBuilder.java:71) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:49) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:30) [classes/:?]
+2024-05-26 02:45:55 INFO  SQLDataBase:50 - Add item successfully
+2024-05-26 02:45:55 INFO  SQLDataBase:55 - Read object with id = 1
+2024-05-26 02:45:55 INFO  SQLDataBase:44 - Data Base disconnecting successfully
+2024-05-26 02:55:28 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 02:55:28 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 02:55:28 INFO  SQLDataBase:55 - Add item successfully
+2024-05-26 02:55:28 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 02:55:28 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 02:56:47 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 02:56:47 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 02:56:47 ERROR SQLDataBase:80 - ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveUser(SQLObjectBuilder.java:77) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.createUser(SQLDataBase.java:43) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:36) [classes/:?]
+2024-05-26 02:56:47 INFO  SQLDataBase:55 - Add item successfully
+2024-05-26 02:56:47 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 02:56:47 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 02:57:17 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 02:57:17 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 02:57:17 INFO  SQLDataBase:55 - Add item successfully
+2024-05-26 02:57:17 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 02:57:17 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 02:57:20 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 02:57:20 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 02:57:20 INFO  SQLDataBase:55 - Add item successfully
+2024-05-26 02:57:20 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 02:57:20 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 02:57:48 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 02:57:48 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 02:57:48 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 02:57:48 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 02:58:10 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 02:58:10 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 02:58:10 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 02:58:10 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:00:55 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:00:55 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:00:55 INFO  SQLDataBase:73 - Deleted object with id = 2 successfully
+2024-05-26 03:00:55 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 03:00:55 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:01:06 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:01:06 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:01:06 INFO  SQLDataBase:73 - Deleted object with id = 3 successfully
+2024-05-26 03:01:06 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 03:01:06 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:01:11 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:01:11 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:01:11 INFO  SQLDataBase:73 - Deleted object with id = 5 successfully
+2024-05-26 03:01:11 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 03:01:11 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:01:24 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:01:24 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:01:24 INFO  SQLDataBase:73 - Deleted object with id = 5 successfully
+2024-05-26 03:01:24 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 03:01:24 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:01:45 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:01:45 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:01:45 ERROR SQLDataBase:219 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLObjectBuilder.java:208) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateObject(SQLObjectBuilder.java:116) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:66) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:38) [classes/:?]
+2024-05-26 03:01:45 ERROR SQLDataBase:191 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLObjectBuilder.java:180) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateObject(SQLObjectBuilder.java:117) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:66) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:38) [classes/:?]
+2024-05-26 03:01:45 INFO  SQLDataBase:67 - Update object with id = 4 successfully
+2024-05-26 03:01:45 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 03:01:45 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:05:01 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:05:01 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:05:01 INFO  SQLDataBase:60 - Read object with id = 1
+2024-05-26 03:05:01 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:05:35 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:05:35 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:05:35 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:05:59 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:05:59 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:05:59 INFO  SQLDataBase:55 - Add item successfully
+2024-05-26 03:05:59 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:06:25 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:06:25 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:06:25 INFO  SQLDataBase:73 - Deleted object with id = 1 successfully
+2024-05-26 03:06:25 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-26 03:11:09 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-26 03:11:09 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-26 03:11:09 INFO  SQLDataBase:55 - Add item successfully
+2024-05-26 03:11:09 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:47:15 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:47:15 ERROR SQLDataBase:92 - ERROR: relation "flats" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLObjectBuilder.java:85) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:37) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 00:47:15 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:47:15 ERROR SQLDataBase:318 - ERROR: relation "coordinates" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "coordinates" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveCoordinates(SQLObjectBuilder.java:307) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLObjectBuilder.java:114) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:54) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:37) [classes/:?]
+2024-05-27 00:47:15 ERROR SQLDataBase:295 - ERROR: relation "houses" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "houses" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveHouse(SQLObjectBuilder.java:284) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLObjectBuilder.java:115) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:54) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:37) [classes/:?]
+2024-05-27 00:47:15 ERROR SQLDataBase:270 - ERROR: relation "flats" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLObjectBuilder.java:267) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLObjectBuilder.java:116) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:54) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:37) [classes/:?]
+2024-05-27 00:47:15 INFO  SQLDataBase:55 - Add item successfully
+2024-05-27 00:47:15 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:47:29 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:47:29 ERROR SQLDataBase:92 - ERROR: relation "flats" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLObjectBuilder.java:85) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:37) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 00:47:29 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:47:29 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:48:28 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:48:28 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:48:28 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:49:34 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:49:35 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:49:35 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:49:46 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:49:46 ERROR SQLDataBase:92 - ERROR: trigger "after_delete_house" for relation "flats" already exists
+org.postgresql.util.PSQLException: ERROR: trigger "after_delete_house" for relation "flats" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLObjectBuilder.java:88) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:37) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 00:49:46 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:49:46 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:58:05 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:58:05 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:58:05 ERROR SQLDataBase:108 - ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveUser(SQLObjectBuilder.java:105) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.createUser(SQLDataBase.java:43) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:36) [classes/:?]
+2024-05-27 00:58:05 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:59:08 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:59:08 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:59:08 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 00:59:42 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 00:59:42 ERROR SQLDataBase:92 - ERROR: trigger "after_delete_house" for relation "flats" already exists
+org.postgresql.util.PSQLException: ERROR: trigger "after_delete_house" for relation "flats" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLObjectBuilder.java:88) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:37) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 00:59:42 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 00:59:42 INFO  SQLDataBase:55 - Add item successfully
+2024-05-27 00:59:42 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 01:00:01 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 01:00:01 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 01:00:01 INFO  SQLDataBase:55 - Add item successfully
+2024-05-27 01:00:01 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 01:02:17 INFO  SQLDataBase:36 - Data Base connecting successfully
+2024-05-27 01:02:17 INFO  SQLDataBase:38 - Create tables successfully
+2024-05-27 01:02:17 INFO  SQLDataBase:55 - Add item successfully
+2024-05-27 01:02:17 INFO  SQLDataBase:49 - Data Base disconnecting successfully
+2024-05-27 01:49:50 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:49:51 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:49:51 ERROR SQLDataBase:34 - Can't use query methods that take a query string on a PreparedStatement.
+org.postgresql.util.PSQLException: Can't use query methods that take a query string on a PreparedStatement.
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:173) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:49:51 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:49:51 ERROR SQLDataBase:247 - ERROR: relation "flats" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:244) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLFlatBuilder.java:93) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.saveObject(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:48) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:36) [classes/:?]
+2024-05-27 01:49:51 INFO  SQLDataBase:49 - Add item successfully
+2024-05-27 01:49:51 ERROR SQLDataBase:247 - ERROR: relation "flats" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:244) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLFlatBuilder.java:93) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.saveObject(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:48) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:37) [classes/:?]
+2024-05-27 01:49:51 INFO  SQLDataBase:49 - Add item successfully
+2024-05-27 01:49:51 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:50:18 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:50:18 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:50:18 ERROR SQLDataBase:34 - Can't use query methods that take a query string on a PreparedStatement.
+org.postgresql.util.PSQLException: Can't use query methods that take a query string on a PreparedStatement.
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:173) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:50:18 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:50:18 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:52:30 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:52:30 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:52:30 ERROR SQLDataBase:34 - Can't use query methods that take a query string on a PreparedStatement.
+org.postgresql.util.PSQLException: Can't use query methods that take a query string on a PreparedStatement.
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:173) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:52:30 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:52:30 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:56:11 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:56:11 ERROR SQLDataBase:34 - Can't use query methods that take a query string on a PreparedStatement.
+org.postgresql.util.PSQLException: Can't use query methods that take a query string on a PreparedStatement.
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:173) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:56:11 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:56:11 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:56:11 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:57:04 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:57:04 ERROR SQLDataBase:36 - Can't use query methods that take a query string on a PreparedStatement.
+org.postgresql.util.PSQLException: Can't use query methods that take a query string on a PreparedStatement.
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:173) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:57:04 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:57:04 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:57:04 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:57:24 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:57:24 ERROR SQLDataBase:36 - Can't use query methods that take a query string on a PreparedStatement.
+org.postgresql.util.PSQLException: Can't use query methods that take a query string on a PreparedStatement.
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:173) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:57:24 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:57:24 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:57:24 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:57:43 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:57:43 ERROR SQLDataBase:36 - Can't use query methods that take a query string on a PreparedStatement.
+org.postgresql.util.PSQLException: Can't use query methods that take a query string on a PreparedStatement.
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:173) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:57:43 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:57:43 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:57:43 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:58:22 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:58:22 ERROR SQLDataBase:34 - ERROR: syntax error at or near "("
+  Position: 29
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "("
+  Position: 29
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:58:22 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:58:22 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:58:22 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 01:59:22 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 01:59:22 ERROR SQLDataBase:34 - ERROR: syntax error at or near "("
+  Position: 28
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "("
+  Position: 28
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.createTables(SQLUserBuilder.java:31) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:32) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:59:22 ERROR SQLDataBase:85 - ERROR: relation "users" does not exist
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:80) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 01:59:22 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 01:59:22 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 02:00:51 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 02:00:51 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 02:00:51 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 02:01:22 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 02:01:22 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 02:01:22 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 02:02:33 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 02:02:33 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 02:02:33 ERROR SQLDataBase:247 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:244) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveObject(SQLFlatBuilder.java:93) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.saveObject(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:48) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:36) [classes/:?]
+2024-05-27 02:02:33 INFO  SQLDataBase:49 - Add item successfully
+2024-05-27 02:02:33 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 02:03:04 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 02:03:04 ERROR SQLDataBase:85 - ERROR: trigger "after_delete_house" for relation "flats" already exists
+org.postgresql.util.PSQLException: ERROR: trigger "after_delete_house" for relation "flats" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:81) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:33) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:35) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:35) [classes/:?]
+2024-05-27 02:03:04 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 02:03:04 INFO  SQLDataBase:49 - Add item successfully
+2024-05-27 02:03:04 INFO  SQLDataBase:49 - Add item successfully
+2024-05-27 02:03:04 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-27 02:03:19 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-27 02:03:20 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-27 02:03:20 INFO  SQLDataBase:49 - Add item successfully
+2024-05-27 02:03:20 INFO  SQLDataBase:49 - Add item successfully
+2024-05-27 02:03:20 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-28 13:26:05 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:26:05 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:26:05 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.saveObject(SQLUserBuilder.java:46) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.saveObject(SQLObjectHandler.java:42) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:48) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:36) [classes/:?]
+2024-05-28 13:26:05 INFO  SQLDataBase:49 - Add item successfully
+2024-05-28 13:26:05 INFO  SQLDataBase:49 - Add item successfully
+2024-05-28 13:26:05 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-28 13:26:46 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:26:46 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:26:46 INFO  SQLDataBase:49 - Add item successfully
+2024-05-28 13:26:46 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-28 13:27:04 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:27:04 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:27:04 INFO  SQLDataBase:49 - Add item successfully
+2024-05-28 13:27:04 INFO  SQLDataBase:54 - Read object with id = 1
+2024-05-28 13:27:04 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-28 13:33:32 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:33:32 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:33:32 INFO  SQLDataBase:49 - Add item successfully
+2024-05-28 13:33:32 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-28 13:33:37 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:33:37 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:33:37 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLUserBuilder.saveObject(SQLUserBuilder.java:46) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.saveObject(SQLObjectHandler.java:34) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:48) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:36) [classes/:?]
+2024-05-28 13:33:37 INFO  ServerApp:48 - A user with login: SavaDanko already exists
+2024-05-28 13:33:53 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:33:53 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:33:53 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+2024-05-28 13:33:53 INFO  ServerApp:48 - A user with login: SavaDanko already exists
+2024-05-28 13:34:44 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:34:44 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:34:44 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+2024-05-28 13:34:44 INFO  ServerApp:48 - A user with login: SavaDanko already exists
+2024-05-28 13:35:31 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:35:31 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:35:31 INFO  SQLDataBase:49 - Add item successfully
+2024-05-28 13:35:31 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-28 13:35:34 INFO  SQLDataBase:34 - Data Base connecting successfully
+2024-05-28 13:35:34 INFO  SQLDataBase:36 - Create tables successfully
+2024-05-28 13:35:34 INFO  SQLDataBase:49 - Add item successfully
+2024-05-28 13:35:34 INFO  SQLDataBase:43 - Data Base disconnecting successfully
+2024-05-29 13:39:05 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 13:39:05 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 13:39:05 INFO  SQLDataBase:52 - Add item successfully
+2024-05-29 13:39:05 INFO  SQLDataBase:46 - Data Base disconnecting successfully
