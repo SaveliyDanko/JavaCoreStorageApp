@@ -1012,3 +1012,914 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 2024-05-29 13:39:05 INFO  SQLDataBase:39 - Create tables successfully
 2024-05-29 13:39:05 INFO  SQLDataBase:52 - Add item successfully
 2024-05-29 13:39:05 INFO  SQLDataBase:46 - Data Base disconnecting successfully
+2024-05-29 16:22:13 ERROR DataBaseHandler:33 - sql.txt (No such file or directory)
+2024-05-29 16:28:10 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:28:10 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:29:21 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:29:21 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:29:43 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:29:43 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:29:43 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:30:01 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:30:01 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:30:01 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:30:01 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:30:13 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:30:13 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:30:13 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(sav123) already exists.
+2024-05-29 16:30:59 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:30:59 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:30:59 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(sav123) already exists.
+2024-05-29 16:31:31 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:31:31 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:31:31 ERROR SQLDataBase:278 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:275) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:92) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:28) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:55) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:42) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:41) [classes/:?]
+2024-05-29 16:31:31 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:31:31 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:32:44 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:32:44 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:32:44 ERROR SQLDataBase:278 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:275) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:92) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:28) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:55) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:42) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:41) [classes/:?]
+2024-05-29 16:32:44 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:32:44 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:32:56 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:32:56 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:32:56 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:32:56 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:32:56 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:33:01 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:33:01 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:33:01 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:33:01 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:33:02 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:33:03 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:33:03 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:33:03 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:33:04 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:33:04 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:33:04 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:33:04 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:34:28 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:34:28 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:34:28 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:34:28 ERROR SQLDataBase:144 - ERROR: syntax error at or near "on"
+  Position: 37
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "on"
+  Position: 37
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:103) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:34:28 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:38:41 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:38:41 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:38:41 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:38:41 ERROR SQLDataBase:148 - ERROR: syntax error at or near "ON"
+  Position: 37
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "ON"
+  Position: 37
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:104) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:38:41 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:40:32 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:40:32 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:40:32 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:40:32 ERROR SQLDataBase:148 - ERROR: syntax error at or near "ON"
+  Position: 37
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "ON"
+  Position: 37
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:104) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:40:32 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:42:23 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:42:23 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:42:23 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:42:23 ERROR SQLDataBase:151 - The column index is out of range: 1, number of columns: 0.
+org.postgresql.util.PSQLException: The column index is out of range: 1, number of columns: 0.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:70) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.SimpleParameterList.setBinaryParameter(SimpleParameterList.java:144) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.bindBytes(PgPreparedStatement.java:1113) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.setLong(PgPreparedStatement.java:344) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:106) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:42:23 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:42:40 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:42:40 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:42:40 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:42:40 ERROR SQLDataBase:151 - ERROR: syntax error at or near "on"
+  Position: 37
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "on"
+  Position: 37
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:107) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:42:40 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:44:25 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:44:26 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:44:26 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:44:26 ERROR SQLDataBase:151 - The column name area was not found in this ResultSet.
+org.postgresql.util.PSQLException: The column name area was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:3085) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgResultSet.getFloat(PgResultSet.java:2957) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:117) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:44:26 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:46:52 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:46:52 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:46:52 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:46:52 ERROR SQLDataBase:151 - The column name area was not found in this ResultSet.
+org.postgresql.util.PSQLException: The column name area was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:3085) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgResultSet.getFloat(PgResultSet.java:2957) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:117) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:46:52 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:48:22 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:48:22 ERROR SQLDataBase:86 - ERROR: syntax error at or near "FLOAT"
+  Position: 150
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "FLOAT"
+  Position: 150
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:81) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:22) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:38) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.connect(DataBaseHandler.java:30) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:39) [classes/:?]
+2024-05-29 16:48:22 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:48:22 INFO  SQLDataBase:61 - Read object with id = 3
+2024-05-29 16:48:22 ERROR SQLDataBase:152 - ERROR: relation "flats" does not exist
+  Position: 15
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:108) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:48:22 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:48:38 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:48:38 ERROR SQLDataBase:86 - ERROR: syntax error at or near "FLOAT"
+  Position: 150
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "FLOAT"
+  Position: 150
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:81) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:22) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:38) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.connect(DataBaseHandler.java:30) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:39) [classes/:?]
+2024-05-29 16:48:38 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:48:38 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:48:38 ERROR SQLDataBase:287 - ERROR: relation "flats" does not exist
+  Position: 13
+org.postgresql.util.PSQLException: ERROR: relation "flats" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:284) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:94) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:28) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:55) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:42) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:41) [classes/:?]
+2024-05-29 16:48:38 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:48:38 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:49:29 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:49:29 ERROR SQLDataBase:86 - ERROR: syntax error at or near "FLOAT"
+  Position: 150
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "FLOAT"
+  Position: 150
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createTables(SQLFlatBuilder.java:81) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createTables(SQLObjectHandler.java:22) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.connect(SQLDataBase.java:38) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.connect(DataBaseHandler.java:30) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:39) [classes/:?]
+2024-05-29 16:49:29 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:49:29 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:49:43 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:49:43 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:49:43 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:49:56 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:49:56 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:49:56 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+2024-05-29 16:50:14 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:50:14 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:50:14 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:50:14 INFO  SQLDataBase:61 - Read object with id = 1
+2024-05-29 16:50:14 ERROR SQLDataBase:152 - The column name numberOfRooms was not found in this ResultSet.
+org.postgresql.util.PSQLException: The column name numberOfRooms was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:3085) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgResultSet.getLong(PgResultSet.java:2951) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:119) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:50:14 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:51:58 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:51:58 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:51:58 ERROR SQLDataBase:289 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:286) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:95) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:28) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:55) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:42) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:41) [classes/:?]
+2024-05-29 16:51:58 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:51:58 INFO  SQLDataBase:61 - Read object with id = 1
+2024-05-29 16:51:58 ERROR SQLDataBase:153 - ResultSet not positioned properly, perhaps you need to call next.
+org.postgresql.util.PSQLException: ResultSet not positioned properly, perhaps you need to call next.
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3276) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgResultSet.getLong(PgResultSet.java:2607) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgResultSet.getLong(PgResultSet.java:2951) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.readModel(SQLFlatBuilder.java:111) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.readModel(SQLObjectHandler.java:39) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.read(SQLDataBase.java:62) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.read(DataBaseHandler.java:46) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:51:58 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:52:10 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:52:10 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:52:10 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:52:17 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:52:17 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:52:17 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:52:17 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:52:17 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:52:35 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:52:35 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:52:35 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+2024-05-29 16:52:42 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:52:42 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:52:42 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:52:42 INFO  SQLDataBase:61 - Read object with id = 2
+2024-05-29 16:52:42 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:53:02 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:53:02 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:53:02 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:53:02 INFO  SQLDataBase:61 - Read object with id = 2
+2024-05-29 16:53:02 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:53:08 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:53:08 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:53:08 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:53:08 INFO  SQLDataBase:61 - Read object with id = 2
+2024-05-29 16:53:08 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:53:45 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:53:46 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:53:46 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:53:46 ERROR SQLDataBase:264 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:253) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:53:46 ERROR SQLDataBase:236 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:225) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:53:46 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 16:53:46 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:55:41 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:55:41 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:55:41 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:55:41 ERROR SQLDataBase:268 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:257) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:55:41 ERROR SQLDataBase:240 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:229) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:55:41 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 16:55:41 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 16:56:24 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:56:24 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:56:24 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:56:24 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:56:31 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:56:31 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:56:31 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:56:45 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:56:45 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:56:45 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:56:45 ERROR SQLDataBase:268 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:257) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:56:45 ERROR SQLDataBase:240 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:229) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:56:45 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 16:58:14 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:58:14 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:58:14 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:58:14 ERROR SQLDataBase:268 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:257) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:58:14 ERROR SQLDataBase:240 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:229) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:58:14 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 16:58:58 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:58:58 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:58:58 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:58:58 ERROR SQLDataBase:270 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:259) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:58:58 ERROR SQLDataBase:242 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:231) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:58:58 ERROR SQLDataBase:210 - ERROR: syntax error at or near "WHERE"
+  Position: 164
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "WHERE"
+  Position: 164
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateFlat(SQLFlatBuilder.java:207) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:163) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:58:58 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 16:59:18 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:59:18 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:59:18 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:59:18 ERROR SQLDataBase:270 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:259) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:59:18 ERROR SQLDataBase:242 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:231) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:59:18 ERROR SQLDataBase:210 - ERROR: column "date" of relation "flats" does not exist
+  Position: 70
+org.postgresql.util.PSQLException: ERROR: column "date" of relation "flats" does not exist
+  Position: 70
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateFlat(SQLFlatBuilder.java:207) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:163) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:59:18 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 16:59:56 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 16:59:56 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 16:59:56 ERROR SQLDataBase:295 - ERROR: column "data" of relation "flats" does not exist
+  Position: 57
+org.postgresql.util.PSQLException: ERROR: column "data" of relation "flats" does not exist
+  Position: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:292) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:95) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:28) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:55) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:42) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:41) [classes/:?]
+2024-05-29 16:59:56 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 16:59:56 ERROR SQLDataBase:270 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:259) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:59:56 ERROR SQLDataBase:242 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:231) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 16:59:56 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:01:21 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:01:21 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:01:21 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:01:21 ERROR SQLDataBase:295 - ERROR: column "data" of relation "flats" does not exist
+  Position: 57
+org.postgresql.util.PSQLException: ERROR: column "data" of relation "flats" does not exist
+  Position: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:292) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:95) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:28) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:55) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:42) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:41) [classes/:?]
+2024-05-29 17:01:21 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:02:13 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:02:13 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:02:13 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:02:13 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:02:24 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:02:24 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:02:24 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:02:24 ERROR SQLDataBase:270 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:259) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 17:02:24 ERROR SQLDataBase:242 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:231) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:162) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 17:02:24 ERROR SQLDataBase:210 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_coordinates_id_fkey"
+  Detail: Key (coordinates_id)=(0) is not present in table "coordinates".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_coordinates_id_fkey"
+  Detail: Key (coordinates_id)=(0) is not present in table "coordinates".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateFlat(SQLFlatBuilder.java:207) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:163) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 17:02:24 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:04:38 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:04:38 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:04:38 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:04:38 ERROR SQLDataBase:271 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:260) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 17:04:38 ERROR SQLDataBase:243 - ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$5W"
+  Position: 107
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateHouse(SQLFlatBuilder.java:232) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:163) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 17:04:38 ERROR SQLDataBase:211 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_coordinates_id_fkey"
+  Detail: Key (coordinates_id)=(0) is not present in table "coordinates".
+2024-05-29 17:04:38 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:07:46 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:07:46 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:07:46 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:07:46 ERROR SQLDataBase:271 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:260) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 17:07:46 ERROR SQLDataBase:211 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_coordinates_id_fkey"
+  Detail: Key (coordinates_id)=(0) is not present in table "coordinates".
+2024-05-29 17:07:46 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:08:36 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:08:36 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:08:36 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:08:36 ERROR SQLDataBase:271 - ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or near "$2W"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateCoordinates(SQLFlatBuilder.java:260) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.updateModel(SQLFlatBuilder.java:161) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.updateModel(SQLObjectHandler.java:50) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.update(SQLDataBase.java:67) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.update(DataBaseHandler.java:50) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:42) [classes/:?]
+2024-05-29 17:08:36 ERROR SQLDataBase:211 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_coordinates_id_fkey"
+  Detail: Key (coordinates_id)=(0) is not present in table "coordinates".
+2024-05-29 17:08:36 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:08:53 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:08:53 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:08:53 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:08:53 ERROR SQLDataBase:211 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_coordinates_id_fkey"
+  Detail: Key (coordinates_id)=(0) is not present in table "coordinates".
+2024-05-29 17:08:53 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:09:16 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:09:16 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:09:16 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:09:16 ERROR SQLDataBase:211 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_house_id_fkey"
+  Detail: Key (house_id)=(0) is not present in table "houses".
+2024-05-29 17:09:16 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:11:37 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:11:37 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:11:37 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:11:37 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:12:14 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:12:15 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:12:15 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:12:15 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:12:45 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:12:45 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:12:45 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:12:45 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:13:48 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:13:48 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:13:48 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:13:48 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:13:48 INFO  SQLDataBase:74 - Deleted object with id = 1 successfully
+2024-05-29 17:13:48 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 17:14:01 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:14:01 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:14:01 INFO  SQLDataBase:56 - Add item successfully
+2024-05-29 17:14:01 INFO  SQLDataBase:68 - Update object with id = 2 successfully
+2024-05-29 17:14:01 INFO  SQLDataBase:74 - Deleted object with id = 1 successfully
+2024-05-29 17:14:01 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-29 17:14:15 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-29 17:14:15 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-29 17:14:15 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.

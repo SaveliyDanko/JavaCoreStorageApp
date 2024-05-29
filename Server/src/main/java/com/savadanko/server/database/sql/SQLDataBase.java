@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SQLDataBase implements ISQLDataBase{
@@ -29,19 +28,24 @@ public class SQLDataBase implements ISQLDataBase{
     }
 
     @Override
-    public void connect(String url, String user, String pass) throws SQLException {
-        if (connection == null || connection.isClosed()){
-            connectionManager.connect(url, user, pass);
-            connection = connectionManager.getConnection();
-            objectHandler.setConnection(connection);
-            logger.info("Data Base connecting successfully");
-            objectHandler.createTables();
-            logger.info("Create tables successfully");
+    public void connect(String url, String user, String pass) {
+        try{
+            if (connection == null || connection.isClosed()){
+                connectionManager.connect(url, user, pass);
+                connection = connectionManager.getConnection();
+                objectHandler.setConnection(connection);
+                logger.info("Data Base connecting successfully");
+                objectHandler.createTables();
+                logger.info("Create tables successfully");
+            }
+        }
+        catch (SQLException e){
+            logger.error(e.getMessage());
         }
     }
 
     @Override
-    public void disconnect() throws SQLException{
+    public void disconnect(){
         connectionManager.disconnect();
         logger.info("Data Base disconnecting successfully");
     }

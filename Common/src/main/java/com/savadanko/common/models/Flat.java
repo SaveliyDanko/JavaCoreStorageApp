@@ -17,6 +17,7 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Flat implements Serializable {
     /*
      * The unique ID of the flat, automatically generated.

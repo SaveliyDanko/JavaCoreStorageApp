@@ -2,6 +2,7 @@ package com.savadanko.server;
 
 
 import com.savadanko.common.models.*;
+import com.savadanko.server.database.DataBaseHandler;
 import com.savadanko.server.database.sql.SQLDataBase;
 import com.savadanko.server.database.sql.SQLObjectHandler;
 import com.savadanko.server.database.sql.Tables;
@@ -14,9 +15,8 @@ public class ServerApp {
     private static final Logger logger = LogManager.getLogger(ServerApp.class);
 
     public static void main(String[] args) {
-        SQLDataBase dataBase = SQLDataBase.getInstance(new SQLObjectHandler());
         Flat flat = new Flat(
-                "Suck",
+                "Suck Sava Danko",
                 new Coordinates(12.5f, 100L),
                 12.5f,
                 100L,
@@ -32,21 +32,19 @@ public class ServerApp {
                 "sav123"
         );
 
+
+        DataBaseHandler dataBase = new DataBaseHandler();
+
         try{
-            dataBase.connect("jdbc:postgresql://localhost:5432/ItmoDataBase", "savadanko", "pass");
-            //dataBase.create(user);
+            dataBase.connect();
+            //dataBase.create(user, Tables.USERS);
             dataBase.create(flat, Tables.FLATS);
-            //dataBase.create(flat);
-            //dataBase.delete(1);
-            //dataBase.update(4, flat);
-            //System.out.println(dataBase.read(1));
+            dataBase.update(2, flat, Tables.FLATS);
+            dataBase.delete(1, Tables.FLATS);
             dataBase.disconnect();
         }
-        catch (SQLException e){
-            logger.error(e.getMessage());
-        }
         catch (RuntimeException e){
-            logger.info(e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 }
