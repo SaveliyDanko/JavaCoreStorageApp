@@ -1,1 +1,8 @@
+com/savadanko/server/database/users/UsersCollection.class
+com/savadanko/server/Person.class
+com/savadanko/server/database/sql/ISQLDataBase.class
+com/savadanko/server/database/users/IUsersCollection.class
+com/savadanko/server/database/models/IModelsCollection.class
 com/savadanko/server/ServerApp.class
+com/savadanko/server/database/sql/SQLDataBase.class
+com/savadanko/server/database/models/ModelsCollection.class

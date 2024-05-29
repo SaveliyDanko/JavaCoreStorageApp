@@ -1,1 +1,8 @@
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/database/models/IModelsCollection.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/database/sql/ISQLDataBase.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/ServerApp.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/database/users/IUsersCollection.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/Person.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/database/models/ModelsCollection.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/database/sql/SQLDataBase.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/database/users/UsersCollection.java
