@@ -1,6 +1,7 @@
 package com.savadanko.server.database.sql;
 
 import java.sql.Connection;
+import java.util.LinkedHashMap;
 
 public class SQLObjectHandler implements ModelHandler{
     private final SQLFlatBuilder flatBuilder;
@@ -23,14 +24,14 @@ public class SQLObjectHandler implements ModelHandler{
     }
 
     @Override
-    public void createModel(Object obj, Tables table) {
+    public long createModel(Object obj, Tables table) {
         if (table.equals(Tables.FLATS)){
-            flatBuilder.createModel(obj);
+            return flatBuilder.createModel(obj);
         }
         else if (table.equals(Tables.USERS)){
-            userBuilder.createModel(obj);
+            return userBuilder.createModel(obj);
         }
-
+        return 0;
     }
 
     @Override
@@ -40,6 +41,17 @@ public class SQLObjectHandler implements ModelHandler{
         }
         else if (table.equals(Tables.USERS)){
             return userBuilder.readModel(id);
+        }
+        return null;
+    }
+
+    @Override
+    public LinkedHashMap<Long, Object> readAll(Tables table) {
+        if (table.equals(Tables.FLATS)){
+            return flatBuilder.readAll();
+        }
+        else if (table.equals(Tables.USERS)){
+            return userBuilder.readAll();
         }
         return null;
     }

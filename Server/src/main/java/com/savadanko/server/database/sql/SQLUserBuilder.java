@@ -4,10 +4,8 @@ import com.savadanko.common.models.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.LinkedHashMap;
 
 public class SQLUserBuilder implements ModelBuilder {
     private static final Logger logger = LogManager.getLogger(SQLUserBuilder.class);
@@ -25,7 +23,7 @@ public class SQLUserBuilder implements ModelBuilder {
         String usersTable = "CREATE TABLE IF NOT EXISTS users (" +
                 "id SERIAL PRIMARY KEY," +
                 "login VARCHAR(128) UNIQUE," +
-                "password VARCHAR(128));";
+                "password BYTEA);";
 
         try (PreparedStatement statement = connection.prepareStatement(usersTable)) {
             statement.execute();
@@ -35,19 +33,27 @@ public class SQLUserBuilder implements ModelBuilder {
     }
 
     @Override
-    public void createModel(Object object) {
+    public long createModel(Object object) {
         User user = (User) object;
         String query = "INSERT INTO users (login, password) VALUES (?, ?);";
 
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, user.getLogin());
-            statement.setString(2, user.getPassword());
+            statement.setBytes(2, user.getPasswordHash());
 
             statement.executeUpdate();
+
+            try(ResultSet generatedKeys = statement.getGeneratedKeys()){
+                if (generatedKeys.next()){
+                    long userId = generatedKeys.getLong(1);
+                    user.setId(userId);
+                    return userId;
+                }
+            }
         } catch (SQLException e) {
             logger.error("Error saving object: {}", e.getMessage());
-            throw new RuntimeException("A user with login: " + user.getLogin() + " already exists");
         }
+        return 0;
     }
 
     @Override
@@ -60,9 +66,9 @@ public class SQLUserBuilder implements ModelBuilder {
                 while (resultSet.next()) {
                     long userId = resultSet.getLong("id");
                     String login = resultSet.getString("login");
-                    String password = resultSet.getString("password");
+                    byte[] passwordHash = resultSet.getBytes("password");
 
-                    User user = new User(login, password);
+                    User user = new User(login, passwordHash);
                     user.setId(userId);
                     return user;
                 }
@@ -74,13 +80,38 @@ public class SQLUserBuilder implements ModelBuilder {
     }
 
     @Override
+    public LinkedHashMap<Long, Object> readAll() {
+        String query = "SELECT * FROM users;";
+
+        LinkedHashMap<Long, Object> linkedHashMap = new LinkedHashMap<>();
+
+        try(PreparedStatement statement = connection.prepareStatement(query)){
+            try(ResultSet resultSet = statement.executeQuery()){
+                while (resultSet.next()){
+                    long userId = resultSet.getLong("id");
+                    String login = resultSet.getString("login");
+                    byte[] passwordHash = resultSet.getBytes("password");
+
+                    User user = new User(userId, login, passwordHash);
+
+                    linkedHashMap.put(userId, user);
+                }
+            }
+        }
+        catch (SQLException e){
+            logger.error(e.getMessage());
+        }
+        return linkedHashMap;
+    }
+
+    @Override
     public void updateModel(long id, Object object) {
         String query = "UPDATE users SET login = ?, password = ? WHERE id = ?";
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             User user = (User) object;
             statement.setString(1, user.getLogin());
-            statement.setString(2, user.getPassword());
+            statement.setBytes(2, user.getPasswordHash());
             statement.setLong(3, id);
 
             statement.executeUpdate();

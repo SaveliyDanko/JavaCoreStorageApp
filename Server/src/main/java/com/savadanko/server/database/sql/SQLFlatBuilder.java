@@ -3,10 +3,12 @@ package com.savadanko.server.database.sql;
 import com.savadanko.common.models.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.sql.*;
 import java.time.OffsetDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.LinkedHashMap;
 
 public class SQLFlatBuilder implements ModelBuilder{
     private static final Logger logger = LogManager.getLogger(SQLDataBase.class);
@@ -88,11 +90,11 @@ public class SQLFlatBuilder implements ModelBuilder{
         }
     }
 
-    public void createModel(Object f){
+    public long createModel(Object f){
         Flat flat = (Flat) f;
         long cordsId = saveCoordinates(flat.getCoordinates());
         long houseId = saveHouse(flat.getHouse());
-        saveFlat(flat, cordsId, houseId);
+        return saveFlat(flat, cordsId, houseId);
     }
 
     public Object readModel(long id){
@@ -101,14 +103,11 @@ public class SQLFlatBuilder implements ModelBuilder{
                 "join houses on flats.house_id = houses.id " +
                 "where flats.id = ?;";
 
-
-
-
         try(PreparedStatement statement = connection.prepareStatement(query)){
             statement.setLong(1, id);
             try (ResultSet resultSet = statement.executeQuery()){
                 resultSet.next();
-                long flat_id = resultSet.getLong("id");
+                long flatId = resultSet.getLong("id");
                 String name = resultSet.getString("flat_name");
                 float x = resultSet.getFloat("x");
                 long y = resultSet.getLong("y");
@@ -129,7 +128,7 @@ public class SQLFlatBuilder implements ModelBuilder{
                 String owner = resultSet.getString("owner");
 
                 return new Flat(
-                        flat_id,
+                        flatId,
                         name,
                         new Coordinates(x, y),
                         dateTime,
@@ -156,8 +155,71 @@ public class SQLFlatBuilder implements ModelBuilder{
     }
 
     @Override
+    public LinkedHashMap<Long, Object> readAll() {
+        String query = "SELECT * FROM flats " +
+                "JOIN houses ON house_id = houses.id " +
+                "JOIN coordinates ON coordinates_id = coordinates.id;";
+
+        LinkedHashMap<Long, Object> linkedHashMap = new LinkedHashMap<>();
+
+        try(PreparedStatement statement = connection.prepareStatement(query)){
+            try (ResultSet resultSet = statement.executeQuery()){
+                while (resultSet.next()){
+                    long flatId = resultSet.getLong("id");
+                    String name = resultSet.getString("flat_name");
+                    float x = resultSet.getFloat("x");
+                    long y = resultSet.getLong("y");
+
+                    Timestamp timestamp = resultSet.getTimestamp("date");
+                    ZonedDateTime dateTime = timestamp.toInstant().atZone(ZoneId.systemDefault());
+
+                    float area = resultSet.getFloat("area");
+                    long numberOfRooms = resultSet.getLong("numberOfRooms");
+                    float price = resultSet.getFloat("price");
+                    View view = View.valueOf(resultSet.getString("view"));
+                    Transport transport = Transport.valueOf(resultSet.getString("transport"));
+                    String houseName = resultSet.getString("house_name");
+                    long year = resultSet.getLong("year");
+                    long numberOfFloors = resultSet.getLong("numberOfFloors");
+                    int numberOfFlatsOnFloor = resultSet.getInt("numberOfFlatsOnFloor");
+                    int numberOfLifts = resultSet.getInt("numberOfLifts");
+                    String owner = resultSet.getString("owner");
+
+                    Flat flat = new Flat(
+                            flatId,
+                            name,
+                            new Coordinates(x, y),
+                            dateTime,
+                            area,
+                            numberOfRooms,
+                            price,
+                            view,
+                            transport,
+                            new House(
+                                    houseName,
+                                    year,
+                                    numberOfFloors,
+                                    numberOfFlatsOnFloor,
+                                    numberOfLifts
+                            ),
+                            owner
+                    );
+
+                    linkedHashMap.put(flatId, flat);
+                }
+            }
+        }
+        catch (SQLException e){
+            logger.error(e.getMessage());
+        }
+        return linkedHashMap;
+    }
+
+    @Override
     public void updateModel(long id, Object object) {
         Flat flat = (Flat) object;
+        updateHouse(id, flat);
+        updateCoordinates(id, flat);
         updateFlat(id, flat);
     }
 
@@ -209,7 +271,7 @@ public class SQLFlatBuilder implements ModelBuilder{
         }
     }
 
-    private long updateHouse(long id, Flat flat){
+    private void updateHouse(long id, Flat flat){
         String query = "UPDATE houses SET house_name = ?," +
                 "year = ?," +
                 "numberOfFloors = ?," +
@@ -231,10 +293,9 @@ public class SQLFlatBuilder implements ModelBuilder{
         catch (SQLException e){
             logger.error(e.getMessage(), e);
         }
-        return 0;
     }
 
-    private long updateCoordinates(long id, Flat flat){
+    private void updateCoordinates(long id, Flat flat){
         String query = "UPDATE coordinates SET x = ?," +
                 "y = ? " +
                 "WHERE id = ?;";
@@ -251,14 +312,13 @@ public class SQLFlatBuilder implements ModelBuilder{
         catch (SQLException e){
             logger.error(e.getMessage(), e);
         }
-        return 0;
     }
 
-    private void saveFlat(Flat flat, long houseId, long cordsId){
+    private long saveFlat(Flat flat, long houseId, long cordsId){
         String query = "INSERT INTO flats (flat_name, coordinates_id, house_id, date, area, numberOfRooms, price, view, transport, owner)" +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
-        try(PreparedStatement statement = connection.prepareStatement(query)){
+        try(PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)){
             statement.setString(1, flat.getName());
             statement.setLong(2, cordsId);
             statement.setLong(3, houseId);
@@ -272,10 +332,19 @@ public class SQLFlatBuilder implements ModelBuilder{
             statement.setString(10, flat.getOwner());
 
             statement.executeUpdate();
+
+            try(ResultSet generatedKeys = statement.getGeneratedKeys()){
+                if (generatedKeys.next()){
+                    long flatId = generatedKeys.getLong(1);
+                    flat.setId(flatId);
+                    return flatId;
+                }
+            }
         }
         catch (SQLException e){
             logger.error(e.getMessage(), e);
         }
+        return 0;
     }
 
     private long saveHouse(House house){

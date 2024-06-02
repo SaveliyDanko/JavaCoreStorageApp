@@ -1923,3 +1923,482 @@ org.postgresql.util.PSQLException: ERROR: trailing junk after parameter at or ne
 2024-05-29 17:14:15 INFO  SQLDataBase:39 - Create tables successfully
 2024-05-29 17:14:15 ERROR SQLUserBuilder:48 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
   Detail: Key (login)=(SavaDanko) already exists.
+2024-05-30 17:12:33 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-30 17:12:33 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-30 17:12:33 INFO  SQLDataBase:56 - Add item successfully
+2024-05-30 17:13:06 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-30 17:13:06 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-30 17:13:06 ERROR SQLUserBuilder:56 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(savadanko) already exists.
+2024-05-30 17:13:06 INFO  SQLDataBase:56 - Add item successfully
+2024-05-30 17:13:06 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-30 17:13:53 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-30 17:13:53 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-30 17:13:53 INFO  SQLDataBase:56 - Add item successfully
+2024-05-30 17:13:53 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-30 17:18:14 INFO  SQLDataBase:37 - Data Base connecting successfully
+2024-05-30 17:18:14 INFO  SQLDataBase:39 - Create tables successfully
+2024-05-30 17:18:14 INFO  SQLDataBase:56 - Add item successfully
+2024-05-30 17:18:14 INFO  SQLDataBase:50 - Data Base disconnecting successfully
+2024-05-30 17:43:20 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-05-30 17:43:20 INFO  SQLDataBase:40 - Create tables successfully
+2024-05-30 17:43:20 INFO  SQLDataBase:57 - Add item successfully
+2024-05-30 17:43:20 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-05-30 17:43:24 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-05-30 17:43:24 INFO  SQLDataBase:40 - Create tables successfully
+2024-05-30 17:43:24 INFO  SQLDataBase:57 - Add item successfully
+2024-05-30 17:43:24 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-05-30 17:43:27 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-05-30 17:43:27 INFO  SQLDataBase:40 - Create tables successfully
+2024-05-30 17:43:27 INFO  SQLDataBase:57 - Add item successfully
+2024-05-30 17:43:27 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-05-30 17:43:29 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-05-30 17:43:29 INFO  SQLDataBase:40 - Create tables successfully
+2024-05-30 17:43:29 INFO  SQLDataBase:57 - Add item successfully
+2024-05-30 17:43:29 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-06-01 18:23:52 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 18:23:52 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 18:23:52 INFO  SQLDataBase:57 - Add item successfully
+2024-06-01 18:23:52 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-06-01 18:33:17 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 18:33:17 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 18:49:00 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 18:49:00 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 19:07:51 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 19:07:51 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 19:08:26 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 19:08:26 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 19:08:55 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 19:08:55 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 19:11:34 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 19:11:34 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 19:11:34 INFO  SQLDataBase:57 - Add item successfully
+2024-06-01 19:11:34 INFO  SQLDataBase:57 - Add item successfully
+2024-06-01 19:11:34 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-06-01 19:11:53 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 19:11:53 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 19:11:53 ERROR SQLUserBuilder:54 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+2024-06-01 19:11:53 INFO  SQLDataBase:57 - Add item successfully
+2024-06-01 19:11:53 INFO  SQLDataBase:57 - Add item successfully
+2024-06-01 19:11:53 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-06-01 19:12:31 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 19:12:31 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 19:12:35 INFO  SQLDataBase:63 - Read object with id = 1
+2024-06-01 20:25:16 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:25:16 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:25:16 INFO  SQLDataBase:51 - Data Base disconnecting successfully
+2024-06-01 20:25:31 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:25:31 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:25:55 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:25:55 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:25:55 ERROR SQLDataBase:345 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(savadanko) is not present in table "users".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(savadanko) is not present in table "users".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:334) [classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:97) [classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:29) [classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:56) [classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:58) [classes/:?]
+	at com.savadanko.server.ServerApp.main(ServerApp.java:46) [classes/:?]
+2024-06-01 20:25:55 INFO  SQLDataBase:57 - Add item successfully
+2024-06-01 20:26:22 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:26:23 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:28:25 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:28:26 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:28:48 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:28:48 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:30:39 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:30:39 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:31:18 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:31:18 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:31:37 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:31:37 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:34:10 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:34:10 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:34:31 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:34:31 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:34:55 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:34:55 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:36:04 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:36:05 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:36:41 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:36:41 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:37:06 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:37:06 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:38:25 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:38:25 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:42:15 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:42:15 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:42:39 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:42:39 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:45:38 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:45:38 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:46:00 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:46:00 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:46:46 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:46:46 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:47:43 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:47:44 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:48:10 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:48:10 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:49:47 INFO  SQLDataBase:38 - Data Base connecting successfully
+2024-06-01 20:49:47 INFO  SQLDataBase:40 - Create tables successfully
+2024-06-01 20:51:08 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:51:08 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:52:35 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:52:35 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:53:02 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:53:02 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:53:37 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:53:37 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:54:13 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:54:13 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:55:12 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:55:12 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:55:22 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:55:22 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:56:11 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:56:11 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:56:11 INFO  SQLDataBase:52 - Data Base disconnecting successfully
+2024-06-01 20:56:25 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 20:56:25 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 20:56:37 INFO  SQLDataBase:58 - Add item successfully
+2024-06-01 21:46:10 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:46:10 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:46:14 INFO  SQLDataBase:58 - Add item successfully
+2024-06-01 21:46:56 ERROR SQLUserBuilder:54 - Error saving object: ERROR: duplicate key value violates unique constraint "users_login_key"
+  Detail: Key (login)=(SavaDanko) already exists.
+2024-06-01 21:46:56 INFO  SQLDataBase:58 - Add item successfully
+2024-06-01 21:48:12 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:48:12 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:51:27 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:51:27 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:51:33 ERROR AuthManager:45 - invalid stream header: 73720020
+2024-06-01 21:53:25 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:53:25 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:53:28 ERROR AuthManager:45 - invalid stream header: 73720020
+2024-06-01 21:53:41 ERROR AuthManager:45 - invalid stream header: 73720020
+2024-06-01 21:55:29 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:55:29 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:55:31 ERROR AuthManager:45 - invalid stream header: 73720020
+2024-06-01 21:56:20 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:56:20 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:56:22 ERROR AuthManager:46 - invalid stream header: 73720020
+2024-06-01 21:58:46 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:58:46 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:58:50 ERROR AuthManager:47 - invalid stream header: 73720020
+2024-06-01 21:58:56 ERROR AuthManager:47 - invalid stream header: 73720020
+2024-06-01 21:59:23 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 21:59:23 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 21:59:25 ERROR AuthManager:47 - invalid stream header: 73720020
+2024-06-01 22:00:19 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:00:19 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:03:15 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:03:15 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:10:24 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:10:24 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:10:27 ERROR ClientHandler:48 - writing aborted; java.io.NotSerializableException: com.savadanko.common.dto.Request
+2024-06-01 22:10:50 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:10:50 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:18:07 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:18:07 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:21:32 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:21:33 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:22:04 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:22:04 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:24:56 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:24:56 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 22:58:41 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 22:58:41 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:00:28 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:00:28 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:01:43 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:01:43 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:03:12 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:03:12 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:04:25 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:04:25 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:12:56 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:12:56 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:13:04 INFO  SQLDataBase:58 - Add item successfully
+2024-06-01 23:13:33 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:13:33 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:13:44 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:13:44 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:13:52 INFO  SQLDataBase:58 - Add item successfully
+2024-06-01 23:15:44 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-01 23:15:44 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-01 23:15:51 ERROR ClientHandler:49 - null
+2024-06-02 00:54:20 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 00:54:20 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 00:54:20 ERROR CommandFactory:23 - com.savadanko.server.command.commands.HelpCommand.<init>(java.lang.String,java.lang.String)
+2024-06-02 00:54:39 ERROR ClientHandler:49 - null
+2024-06-02 00:54:51 ERROR ClientHandler:49 - null
+2024-06-02 00:54:57 ERROR ClientHandler:49 - null
+2024-06-02 00:56:28 ERROR ClientHandler:49 - null
+2024-06-02 00:57:38 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 00:57:38 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 00:58:03 ERROR ClientHandler:49 - null
+2024-06-02 00:58:15 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 00:58:15 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:02:53 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:02:53 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:03:24 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:03:24 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:04:09 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:04:09 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:08:36 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:08:36 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:11:14 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:11:14 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:11:43 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:11:43 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:12:29 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:12:29 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:13:30 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:13:30 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:15:52 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:15:52 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:16:03 ERROR ClientHandler:49 - null
+2024-06-02 01:38:51 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:38:51 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:42:18 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:42:18 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:43:14 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:43:14 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:43:51 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:43:51 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:44:32 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:44:32 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:45:09 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:45:09 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:47:41 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:47:41 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:47:43 ERROR ClientHandler:52 - null
+2024-06-02 01:48:48 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:48:48 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:48:49 ERROR ClientHandler:53 - com.savadanko.common.dto.AuthResponse
+2024-06-02 01:49:13 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:49:13 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:50:34 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:50:34 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:54:02 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:54:02 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:55:35 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:55:35 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 01:56:32 ERROR ClientHandler:51 - null
+2024-06-02 01:56:38 ERROR ClientHandler:51 - null
+2024-06-02 01:56:49 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 01:56:49 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 13:56:07 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 13:56:07 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 13:57:16 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 13:57:16 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 13:57:42 ERROR ConnectionManager:49 - null
+2024-06-02 13:57:49 ERROR ConnectionManager:49 - null
+2024-06-02 13:58:35 ERROR ConnectionManager:49 - null
+2024-06-02 13:58:50 ERROR ConnectionManager:49 - null
+2024-06-02 13:58:59 ERROR ConnectionManager:49 - null
+2024-06-02 14:02:30 ERROR ConnectionManager:49 - null
+2024-06-02 14:02:37 ERROR ConnectionManager:49 - null
+2024-06-02 14:03:16 ERROR ConnectionManager:49 - null
+2024-06-02 14:03:25 ERROR ConnectionManager:49 - null
+2024-06-02 14:04:58 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:04:58 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:05:00 ERROR ConnectionManager:50 - null
+2024-06-02 14:06:09 ERROR ConnectionManager:50 - null
+2024-06-02 14:07:00 ERROR ConnectionManager:50 - null
+2024-06-02 14:07:40 ERROR ConnectionManager:50 - null
+2024-06-02 14:08:28 ERROR ConnectionManager:50 - null
+2024-06-02 14:09:09 ERROR ConnectionManager:50 - null
+2024-06-02 14:09:52 ERROR ConnectionManager:50 - null
+2024-06-02 14:10:07 ERROR ConnectionManager:50 - null
+2024-06-02 14:10:20 ERROR ConnectionManager:50 - null
+2024-06-02 14:10:54 ERROR ConnectionManager:50 - null
+2024-06-02 14:12:17 ERROR ConnectionManager:50 - null
+2024-06-02 14:12:29 ERROR ConnectionManager:50 - null
+2024-06-02 14:15:01 ERROR ConnectionManager:50 - null
+2024-06-02 14:20:47 ERROR ConnectionManager:50 - null
+2024-06-02 14:22:57 ERROR ConnectionManager:50 - null
+2024-06-02 14:22:58 ERROR ConnectionManager:50 - null
+2024-06-02 14:23:45 ERROR ConnectionManager:50 - null
+2024-06-02 14:23:55 ERROR ConnectionManager:50 - null
+2024-06-02 14:29:11 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:29:11 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:29:25 ERROR ConnectionManager:50 - null
+2024-06-02 14:35:31 ERROR ConnectionManager:50 - null
+2024-06-02 14:36:51 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:36:51 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:36:56 ERROR ConnectionManager:50 - null
+2024-06-02 14:37:00 ERROR ConnectionManager:50 - null
+2024-06-02 14:38:00 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:38:00 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:42:24 ERROR ConnectionManager:51 - null
+2024-06-02 14:42:25 ERROR ConnectionManager:51 - null
+2024-06-02 14:47:20 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:47:20 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:50:21 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:50:21 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:50:34 ERROR ConnectionManager:49 - null
+2024-06-02 14:52:40 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:52:40 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:52:41 ERROR ClientHandler:52 - null
+2024-06-02 14:54:16 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:54:16 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:54:18 ERROR ClientHandler:52 - null
+2024-06-02 14:56:05 ERROR ClientHandler:52 - null
+2024-06-02 14:57:37 ERROR ClientHandler:52 - null
+2024-06-02 14:58:31 ERROR ClientHandler:52 - null
+2024-06-02 14:58:36 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 14:58:36 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 14:58:38 ERROR ClientHandler:52 - null
+2024-06-02 14:58:43 ERROR ClientHandler:52 - null
+2024-06-02 14:59:05 ERROR ClientHandler:52 - null
+2024-06-02 14:59:54 ERROR AuthManager:41 - writing aborted; java.io.NotSerializableException: com.savadanko.common.models.User
+2024-06-02 14:59:54 ERROR ClientHandler:52 - null
+2024-06-02 15:00:15 ERROR AuthManager:41 - null
+2024-06-02 15:00:15 ERROR ClientHandler:52 - null
+2024-06-02 15:00:23 ERROR AuthManager:41 - com.savadanko.common.models.User; class invalid for deserialization
+2024-06-02 15:00:23 ERROR ClientHandler:52 - invalid type code: 00
+2024-06-02 15:00:33 ERROR AuthManager:41 - com.savadanko.common.models.User; class invalid for deserialization
+2024-06-02 15:00:33 ERROR ClientHandler:52 - invalid type code: 00
+2024-06-02 15:01:31 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:01:31 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:04:48 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:04:48 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:04:49 ERROR AuthManager:41 - null
+2024-06-02 15:04:49 ERROR ClientHandler:51 - null
+2024-06-02 15:05:03 ERROR ClientHandler:51 - null
+2024-06-02 15:05:08 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:05:08 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:06:01 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:06:01 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:06:17 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 15:06:28 ERROR ClientHandler:51 - null
+2024-06-02 15:09:43 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:09:43 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:12:02 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:12:02 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:14:08 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:14:08 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:14:50 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:14:50 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:15:17 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:15:17 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:15:22 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 15:16:07 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:16:07 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:16:14 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 15:42:28 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:42:28 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:42:36 ERROR ConnectionManager:49 - null
+2024-06-02 15:43:59 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:43:59 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:44:22 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 15:44:22 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 15:44:34 ERROR AuthManager:41 - null
+2024-06-02 15:44:34 ERROR ClientHandler:51 - null
+2024-06-02 15:44:34 ERROR ClientHandler:51 - null
+2024-06-02 16:01:43 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 16:01:43 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 16:02:01 ERROR ClientManager:57 - Connection refused
+2024-06-02 16:02:27 ERROR ClientManager:57 - Connection refused
+2024-06-02 16:02:31 ERROR ConnectionManager:49 - Connection refused
+2024-06-02 16:02:31 ERROR ClientManager:57 - Connection refused
+2024-06-02 16:05:02 ERROR ClientManager:57 - Connection refused
+2024-06-02 16:05:04 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 16:05:04 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 16:05:12 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 16:50:59 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 16:50:59 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 16:51:14 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.View.few
+2024-06-02 16:51:18 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.View.few
+2024-06-02 16:51:33 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.View.normal
+2024-06-02 16:52:32 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.View.yard
+2024-06-02 16:54:05 ERROR ClientManager:65 - null
+2024-06-02 16:54:05 ERROR ConnectionManager:49 - Connection refused
+2024-06-02 16:54:06 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 16:54:06 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 16:54:23 ERROR ViewInputHelper:33 - No enum constant com.savadanko.common.models.View.street
+2024-06-02 16:54:52 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 16:54:52 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 16:54:59 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 16:55:16 ERROR ClientManager:65 - null
+2024-06-02 17:23:56 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 17:23:56 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 17:25:13 ERROR ClientManager:65 - null
+2024-06-02 17:25:14 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 17:25:14 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 17:28:06 ERROR ClientManager:65 - null
+2024-06-02 17:28:07 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 17:28:07 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 17:29:40 ERROR ClientManager:65 - null
+2024-06-02 17:29:40 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 17:29:40 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 18:59:47 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 18:59:47 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 18:59:59 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:00:42 ERROR ClientManager:65 - null
+2024-06-02 19:03:35 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:03:35 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:06:12 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:06:12 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:06:22 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.View.1
+2024-06-02 19:06:24 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.View.1
+2024-06-02 19:06:55 ERROR ClientHandler:51 - null
+2024-06-02 19:07:01 ERROR AuthManager:41 - null
+2024-06-02 19:07:01 ERROR ClientHandler:51 - null
+2024-06-02 19:08:13 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:08:13 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:08:19 ERROR ClientManager:57 - Unknown command: 1
+2024-06-02 19:09:06 ERROR ClientManager:65 - null
+2024-06-02 19:10:26 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:10:26 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:11:34 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:11:34 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:12:12 ERROR ClientManager:65 - null
+2024-06-02 19:12:14 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:12:14 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:12:27 ERROR ClientHandler:51 - null
+2024-06-02 19:12:47 ERROR ClientHandler:51 - null
+2024-06-02 19:17:09 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:17:09 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:17:18 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:17:53 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.YARD
+2024-06-02 19:17:54 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1
+2024-06-02 19:17:55 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1
+2024-06-02 19:18:01 ERROR SQLDataBase:345 - ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" violates foreign key constraint "flats_owner_fkey"
+  Detail: Key (owner)=(SavaDanko) is not present in table "users".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.saveFlat(SQLFlatBuilder.java:334) ~[classes/:?]
+	at com.savadanko.server.database.sql.SQLFlatBuilder.createModel(SQLFlatBuilder.java:97) ~[classes/:?]
+	at com.savadanko.server.database.sql.SQLObjectHandler.createModel(SQLObjectHandler.java:29) ~[classes/:?]
+	at com.savadanko.server.database.sql.SQLDataBase.create(SQLDataBase.java:57) ~[classes/:?]
+	at com.savadanko.server.database.DataBaseHandler.create(DataBaseHandler.java:58) ~[classes/:?]
+	at com.savadanko.server.command.commands.InsertCommand.execute(InsertCommand.java:18) ~[classes/:?]
+	at com.savadanko.server.command.CommandExecutor.run(CommandExecutor.java:34) ~[classes/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-06-02 19:18:01 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:20:54 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:20:54 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:21:02 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:21:16 INFO  SQLDataBase:58 - Add item successfully

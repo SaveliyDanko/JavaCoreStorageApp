@@ -1,10 +1,12 @@
 package com.savadanko.server.database.sql;
 
+import com.savadanko.common.models.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.LinkedHashMap;
 
 public class SQLDataBase implements ISQLDataBase{
     private static final Logger logger = LogManager.getLogger(SQLDataBase.class);
@@ -51,15 +53,21 @@ public class SQLDataBase implements ISQLDataBase{
     }
 
     @Override
-    public void create(Object object, Tables table) {
-        objectHandler.createModel(object, table);
+    public long create(Object object, Tables table) {
+        long id = objectHandler.createModel(object, table);
         logger.info("Add item successfully");
+        return id;
     }
 
     @Override
     public Object read(long id, Tables table) {
         logger.info("Read object with id = {}", id);
         return objectHandler.readModel(id, table);
+    }
+
+    @Override
+    public LinkedHashMap<Long, Object> readAll(Tables tables) {
+        return objectHandler.readAll(tables);
     }
 
     @Override
