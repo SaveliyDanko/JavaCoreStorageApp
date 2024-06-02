@@ -2,20 +2,23 @@ package com.savadanko.server.command.commands;
 
 import com.savadanko.common.models.Flat;
 import com.savadanko.server.command.CommandResponse;
-import com.savadanko.server.command.ECommand;
+import com.savadanko.server.database.DataBaseHandler;
+import com.savadanko.server.database.sql.Tables;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class HelpCommand implements Command{
+public class ShowCommand implements Command{
     private final String[] args;
     private final Flat flat;
     private final String userLogin;
 
     @Override
     public CommandResponse execute() {
+        DataBaseHandler dataBaseHandler = DataBaseHandler.getInstance();
         StringBuilder sb = new StringBuilder();
-        for (ECommand item : ECommand.values()){
-            sb.append(item.getName()).append(" - ").append(item.getDescription()).append("\n");
+        for (Object o : dataBaseHandler.readAll(Tables.FLATS).values()){
+            Flat f = (Flat) o;
+            sb.append(f.toString()).append("\n");
         }
         return new CommandResponse(sb.toString());
     }

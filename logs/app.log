@@ -2402,3 +2402,93 @@ org.postgresql.util.PSQLException: ERROR: insert or update on table "flats" viol
 2024-06-02 19:20:54 INFO  SQLDataBase:41 - Create tables successfully
 2024-06-02 19:21:02 INFO  SQLDataBase:58 - Add item successfully
 2024-06-02 19:21:16 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:40:40 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:40:40 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:40:51 ERROR ClientManager:61 - Unknown command: delete
+2024-06-02 19:40:57 ERROR ClientHandler:51 - null
+2024-06-02 19:42:37 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:42:37 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:42:45 ERROR ClientManager:61 - Unknown command: delete
+2024-06-02 19:42:50 ERROR ClientManager:61 - Unknown command: remove
+2024-06-02 19:42:56 ERROR ClientHandler:51 - null
+2024-06-02 19:43:15 INFO  SQLDataBase:82 - Deleted object with id = 1 successfully
+2024-06-02 19:43:28 ERROR ClientManager:61 - Unknown command: delete_key 1
+2024-06-02 19:45:12 ERROR ClientManager:69 - null
+2024-06-02 19:45:12 ERROR ConnectionManager:49 - Connection refused
+2024-06-02 19:45:13 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:45:13 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:45:38 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.View.1
+2024-06-02 19:46:33 ERROR ClientManager:69 - null
+2024-06-02 19:46:35 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:46:35 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:46:48 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:47:03 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1
+2024-06-02 19:47:04 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1
+2024-06-02 19:47:05 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1FEW
+2024-06-02 19:47:05 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1
+2024-06-02 19:47:06 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1
+2024-06-02 19:47:07 ERROR ViewInputHelper:32 - No enum constant com.savadanko.common.models.Transport.1
+2024-06-02 19:47:10 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:47:22 ERROR ClientManager:61 - Unknown command: remove key 1
+2024-06-02 19:48:39 ERROR ClientManager:61 - Unknown command: dsg
+2024-06-02 19:48:42 ERROR ClientManager:61 - Unknown command: sf
+2024-06-02 19:48:47 ERROR ClientManager:69 - null
+2024-06-02 19:51:22 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:51:22 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:51:57 INFO  SQLDataBase:82 - Deleted object with id = 2 successfully
+2024-06-02 19:52:13 ERROR ClientHandler:51 - null
+2024-06-02 19:52:20 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:52:42 ERROR ClientHandler:51 - null
+2024-06-02 19:52:55 INFO  SQLDataBase:82 - Deleted object with id = 3 successfully
+2024-06-02 19:57:15 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:57:15 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:57:33 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:57:45 INFO  SQLDataBase:58 - Add item successfully
+2024-06-02 19:58:52 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:58:52 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:58:57 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:58:57 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 19:59:04 ERROR ClientHandler:51 - null
+2024-06-02 19:59:34 ERROR ClientManager:69 - null
+2024-06-02 19:59:35 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 19:59:35 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:01:29 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:01:29 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:08:37 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:08:37 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:08:42 ERROR ClientManager:74 - Invalid auth, incorrect password, try again
+2024-06-02 20:09:21 ERROR ClientManager:70 - null
+2024-06-02 20:12:06 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:12:06 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:12:30 ERROR ClientManager:70 - null
+2024-06-02 20:12:30 ERROR ConnectionManager:49 - Connection refused
+2024-06-02 20:12:30 ERROR ClientManager:70 - null
+2024-06-02 20:12:30 ERROR ConnectionManager:49 - Connection refused
+2024-06-02 20:15:23 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:15:23 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:15:37 ERROR ClientManager:70 - null
+2024-06-02 20:15:37 ERROR ConnectionManager:49 - Connection refused
+2024-06-02 20:15:48 ERROR ClientManager:70 - null
+2024-06-02 20:15:49 ERROR ConnectionManager:49 - Connection refused
+2024-06-02 20:15:51 ERROR ClientManager:70 - Broken pipe
+2024-06-02 20:17:53 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:17:53 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:18:48 ERROR AuthManager:44 - null
+2024-06-02 20:18:54 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:18:54 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:20:22 ERROR ClientManager:70 - null
+2024-06-02 20:22:59 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:22:59 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:23:16 ERROR AuthManager:44 - null
+2024-06-02 20:39:29 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:39:29 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:46:38 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:46:38 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:47:17 INFO  SQLDataBase:76 - Update object with id = 4 successfully
+2024-06-02 20:51:02 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:51:02 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:51:13 INFO  SQLDataBase:82 - Deleted object with id = 5 successfully
+2024-06-02 20:54:51 ERROR ClientHandler:59 - null
+2024-06-02 20:54:57 INFO  SQLDataBase:39 - Data Base connecting successfully
+2024-06-02 20:54:57 INFO  SQLDataBase:41 - Create tables successfully
+2024-06-02 20:55:05 INFO  SQLDataBase:82 - Deleted object with id = 4 successfully

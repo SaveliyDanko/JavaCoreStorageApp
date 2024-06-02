@@ -2,6 +2,7 @@ package com.savadanko.client;
 
 import com.savadanko.client.authorization.AuthManager;
 import com.savadanko.client.connection.ConnectionManager;
+import com.savadanko.client.exceptions.InvalidAuthException;
 import com.savadanko.client.exceptions.UnknownCommandException;
 import com.savadanko.client.input.CurrentInput;
 import com.savadanko.client.requestmanager.RequestBuilder;
@@ -19,6 +20,8 @@ public class ClientManager {
 
     private final CurrentInput currentInput;
     private final ConnectionManager connectionManager;
+    private AuthResponse authResponse;
+    private AuthManager authManager;
 
     public ClientManager(ConnectionManager connectionManager, CurrentInput currentInput) {
         this.connectionManager = connectionManager;
@@ -34,18 +37,23 @@ public class ClientManager {
                 if (connectionManager.getSocket() == null){
                     connectionManager.connect(host, port);
                 }
-                AuthManager authManager = new AuthManager(currentInput,
-                        connectionManager.getOut(),
-                        connectionManager.getIn());
+                if (connectionManager.getSocket() != null){
+                    authManager = new AuthManager(currentInput,
+                            connectionManager.getOut(),
+                            connectionManager.getIn());
 
-                AuthResponse authResponse = authManager.start();
-
-
+                    authResponse = authManager.start();
+                }
 
                 while (currentInput.hasNextLine()){
                     String command = currentInput.getNextLine();
                     try {
-                        Request request = new RequestBuilder().build(currentInput, authResponse, command, authManager.getLogin());
+                        Request request = new RequestBuilder()
+                                .build(currentInput,
+                                        authResponse,
+                                        command,
+                                        authManager.getLogin());
+
                         connectionManager.getOut().writeObject(request);
                         connectionManager.getOut().flush();
 
@@ -64,7 +72,7 @@ public class ClientManager {
                 log.error(e.getMessage());
                 connectionManager.reconnect(currentInput, host, port);
             }
-            catch (ClassNotFoundException | NoSuchAlgorithmException e){
+            catch (ClassNotFoundException | NoSuchAlgorithmException | InvalidAuthException e){
                 log.error(e.getMessage());
             }
         }

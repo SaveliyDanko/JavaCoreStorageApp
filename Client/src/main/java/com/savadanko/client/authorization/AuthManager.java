@@ -1,8 +1,10 @@
 package com.savadanko.client.authorization;
 
+import com.savadanko.client.exceptions.InvalidAuthException;
 import com.savadanko.client.input.IInput;
 import com.savadanko.common.dto.AuthDTO;
 import com.savadanko.common.dto.AuthResponse;
+import com.savadanko.common.dto.Status;
 import lombok.Getter;
 
 import java.io.IOException;
@@ -26,22 +28,30 @@ public class AuthManager {
         this.out = out;
     }
 
-    public AuthResponse start() throws NoSuchAlgorithmException, IOException, ClassNotFoundException {
-        System.out.println("Input login: ");
-        if (currentInput.hasNextLine()){
-            this.login = currentInput.getNextLine();
+    public AuthResponse start() throws NoSuchAlgorithmException, IOException, ClassNotFoundException, InvalidAuthException {
+        while (true){
+            System.out.println("Input login: ");
+            if (currentInput.hasNextLine()){
+                this.login = currentInput.getNextLine();
+            }
+
+            System.out.println("Input password: ");
+            if (currentInput.hasNextLine()){
+                this.password = currentInput.getNextLine();
+            }
+
+            AuthDTO authDTO = new AuthDTO(login, PasswordHasher.hashPassword(password));
+
+            out.writeObject(authDTO);
+            out.flush();
+
+            AuthResponse authResponse = (AuthResponse) in.readObject();
+            if (authResponse.getStatus().equals(Status.STATUS_200)){
+                return authResponse;
+            }
+            else {
+                System.out.println("Invalid auth, incorrect password, try again");
+            }
         }
-
-        System.out.println("Input password: ");
-        if (currentInput.hasNextLine()){
-            this.password = currentInput.getNextLine();
-        }
-
-        AuthDTO authDTO = new AuthDTO(login, PasswordHasher.hashPassword(password));
-
-        out.writeObject(authDTO);
-        out.flush();
-
-        return (AuthResponse) in.readObject();
     }
 }

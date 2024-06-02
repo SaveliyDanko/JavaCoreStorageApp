@@ -10,14 +10,17 @@ import java.util.Map;
 public class AuthResponse implements Serializable {
     private Map<String, CommandProperties> commandPropertiesMap;
     private final String message;
+    private final Status status;
 
-    public AuthResponse(String message) {
+    public AuthResponse(String message, Status status) {
         this.message = message;
+        this.status = status;
     }
 
-    public AuthResponse(String message, Map<String, CommandProperties> commandPropertiesMap) {
+    public AuthResponse(String message, Map<String, CommandProperties> commandPropertiesMap, Status status) {
         this.message = message;
         this.commandPropertiesMap = commandPropertiesMap;
+        this.status = status;
     }
 
 }

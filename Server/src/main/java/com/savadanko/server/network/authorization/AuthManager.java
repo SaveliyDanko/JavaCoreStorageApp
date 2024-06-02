@@ -2,6 +2,7 @@ package com.savadanko.server.network.authorization;
 
 import com.savadanko.common.dto.AuthDTO;
 import com.savadanko.common.dto.AuthResponse;
+import com.savadanko.common.dto.Status;
 import com.savadanko.common.models.User;
 import com.savadanko.server.command.CommandFactory;
 import com.savadanko.server.database.DataBaseHandler;
@@ -29,13 +30,13 @@ public class AuthManager {
                 user = (User) o;
                 if (user.getLogin().equals(authDTO.getLogin())){
                     if (Arrays.equals(user.getPasswordHash(), authDTO.getPasswordHash())){
-                        return new AuthResponse("Valid auth", commandFactory.getCommandPropertiesMap());
+                        return new AuthResponse("Valid auth", commandFactory.getCommandPropertiesMap(), Status.STATUS_200);
                     }
-                    else return new AuthResponse("Invalid auth");
+                    else return new AuthResponse("Invalid auth", Status.STATUS_400);
                 }
             }
             register(authDTO.getLogin(), authDTO.getPasswordHash());
-            return new AuthResponse("Registration", commandFactory.getCommandPropertiesMap());
+            return new AuthResponse("Registration", commandFactory.getCommandPropertiesMap(), Status.STATUS_200);
         }
         catch (IOException | ClassNotFoundException e){
             log.error(e.getMessage());

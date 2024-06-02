@@ -27,12 +27,22 @@ public class CommandExecutor implements Runnable{
         try {
             while (true) {
                 CommandRequest commandRequest = requests.take();
-                Class<?> commandClass = commandFactory.getCommandMap().get(commandRequest.getRequest().getCommand());
+                Class<?> commandClass = commandFactory
+                        .getCommandMap()
+                        .get(commandRequest
+                                .getRequest()
+                                .getCommand());
 
                 if (commandClass != null) {
                     Object object = commandClass
-                            .getDeclaredConstructor(String[].class, Flat.class)
-                            .newInstance(commandRequest.getRequest().getArgs(), commandRequest.getRequest().getFlat());
+                            .getDeclaredConstructor(
+                                    String[].class,
+                                    Flat.class,
+                                    String.class)
+                            .newInstance(
+                                    commandRequest.getRequest().getArgs(),
+                                    commandRequest.getRequest().getFlat(),
+                                    commandRequest.getRequest().getUserLogin());
 
                     Command command = (Command) object;
 

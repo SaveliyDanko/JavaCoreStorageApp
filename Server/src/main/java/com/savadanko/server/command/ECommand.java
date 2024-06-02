@@ -1,5 +1,8 @@
 package com.savadanko.server.command;
 
+import lombok.Getter;
+
+@Getter
 public enum ECommand {
     HELP("help", "вывести справку по доступным командам"),
     INFO("info", "вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)"),
@@ -25,11 +28,4 @@ public enum ECommand {
         this.description = description;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
 }

@@ -12,4 +12,5 @@ public class Request implements Serializable {
     private final String command;
     private final String[] args;
     private final Flat flat;
+    private final String userLogin;
 }

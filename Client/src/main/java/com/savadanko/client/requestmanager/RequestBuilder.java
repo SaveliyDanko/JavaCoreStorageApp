@@ -18,9 +18,17 @@ public class RequestBuilder {
                 throw new IllegalArgumentException("Illegal arguments count");
             }
             if (authResponse.getCommandPropertiesMap().get(commandName).isObject()){
-                return new Request(commandName, commandArgs, new FlatInputHelper(currentInput, owner).getFlat());
+                return new Request(
+                        commandName,
+                        commandArgs,
+                        new FlatInputHelper(currentInput, owner).getFlat(),
+                        owner);
             }
-            else return new Request(commandName, commandArgs, null);
+            else return new Request(
+                    commandName,
+                    commandArgs,
+                    null,
+                    owner);
         }
         else throw new UnknownCommandException("Unknown command: " + command);
     }

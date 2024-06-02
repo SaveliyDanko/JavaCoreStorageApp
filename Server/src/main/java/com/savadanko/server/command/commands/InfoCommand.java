@@ -7,7 +7,7 @@ import com.savadanko.server.database.sql.Tables;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class InsertCommand implements Command{
+public class InfoCommand implements Command{
     private final String[] args;
     private final Flat flat;
     private final String userLogin;
@@ -15,7 +15,8 @@ public class InsertCommand implements Command{
     @Override
     public CommandResponse execute() {
         DataBaseHandler dataBaseHandler = DataBaseHandler.getInstance();
-        dataBaseHandler.create(flat, Tables.FLATS);
-        return new CommandResponse("Insert flat successfully");
+        int size = dataBaseHandler.readAll(Tables.FLATS).values().size();
+        Class<?> clazz = Flat.class;
+        return new CommandResponse("Collection size: " + size + " Collection type: " + clazz.getName());
     }
 }

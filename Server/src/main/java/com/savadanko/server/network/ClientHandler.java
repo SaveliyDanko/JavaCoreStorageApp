@@ -3,6 +3,7 @@ package com.savadanko.server.network;
 import com.savadanko.common.dto.AuthResponse;
 import com.savadanko.common.dto.Request;
 import com.savadanko.common.dto.Response;
+import com.savadanko.common.dto.Status;
 import com.savadanko.server.command.CommandFactory;
 import com.savadanko.server.command.CommandRequest;
 import com.savadanko.server.network.authorization.AuthManager;
@@ -38,9 +39,16 @@ public class ClientHandler implements Runnable {
     @Override
     public void run() {
         try {
-            AuthResponse response = authManager.authorization(in, commandFactory);
-            out.writeObject(response);
-            out.flush();
+            while (true){
+                AuthResponse response = authManager.authorization(in, commandFactory);
+                if (response.getStatus().equals(Status.STATUS_200)){
+                    out.writeObject(response);
+                    out.flush();
+                    break;
+                }
+                out.writeObject(response);
+                out.flush();
+            }
             while (true){
                 Request request = (Request) in.readObject();
                 CommandRequest commandRequest = new CommandRequest(socket, request);
