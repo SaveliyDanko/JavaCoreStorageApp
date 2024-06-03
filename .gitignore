@@ -1,4 +1,6 @@
 Client/target
 Server/target
 Common/terget
+Client/logs/app.log
+logs/app.log
 .idea

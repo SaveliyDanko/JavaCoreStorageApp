@@ -1,5 +1,7 @@
 package com.savadanko.server.database.collections;
 
+import com.savadanko.common.models.Flat;
+import com.savadanko.common.models.User;
 import com.savadanko.server.database.sql.ISQLDataBase;
 import com.savadanko.server.database.sql.Tables;
 
@@ -18,14 +20,19 @@ public class CollectionHandler implements ICollectionHandler{
     public void fill(ISQLDataBase dataBase) {
         flatCollection.fill(dataBase);
         userCollection.fill(dataBase);
+        System.out.println("FlatCollection and UserCollection have been filled.");
     }
 
     @Override
-    public void create(Object object, Tables collections) {
+    public void create(long id, Object object, Tables collections) {
         if (collections.equals(Tables.FLATS)){
-            flatCollection.create(object);
+            Flat flat = (Flat) object;
+            flat.setId(id);
+            flatCollection.create(flat);
         }
         else if (collections.equals(Tables.USERS)){
+            User user = (User) object;
+            user.setId(id);
             userCollection.create(object);
         }
     }

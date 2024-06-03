@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 public class AuthManager {
@@ -22,31 +23,36 @@ public class AuthManager {
         dataBaseHandler = DataBaseHandler.getInstance();
     }
 
-    public AuthResponse authorization(ObjectInputStream ois, CommandFactory commandFactory){
-        User user;
+    public AuthResponse authorization(ObjectInputStream ois, CommandFactory commandFactory) {
         try {
             AuthDTO authDTO = (AuthDTO) ois.readObject();
-            for (Object o : dataBaseHandler.readAll(Tables.USERS).values()){
-                user = (User) o;
-                if (user.getLogin().equals(authDTO.getLogin())){
-                    if (Arrays.equals(user.getPasswordHash(), authDTO.getPasswordHash())){
+            for (Object o : dataBaseHandler.readAll(Tables.USERS).values()) {
+                User user = (User) o;
+                if (user.getLogin().equals(authDTO.getLogin())) {
+                    byte[] hashedPassword = PasswordHasher.hashPassword(authDTO.getHashedPassword(), user.getSalt());
+                    if (Arrays.equals(user.getPasswordHash(), hashedPassword)) {
+                        log.info("User {} authenticated successfully", user.getLogin());
                         return new AuthResponse("Valid auth", commandFactory.getCommandPropertiesMap(), Status.STATUS_200);
+                    } else {
+                        log.warn("Invalid password for user {}", user.getLogin());
+                        return new AuthResponse("Invalid auth", Status.STATUS_400);
                     }
-                    else return new AuthResponse("Invalid auth", Status.STATUS_400);
                 }
             }
-            register(authDTO.getLogin(), authDTO.getPasswordHash());
+            register(authDTO.getLogin(), authDTO.getHashedPassword());
+            log.info("New user {} registered successfully", authDTO.getLogin());
             return new AuthResponse("Registration", commandFactory.getCommandPropertiesMap(), Status.STATUS_200);
+        } catch (IOException | ClassNotFoundException | NoSuchAlgorithmException e) {
+            log.error("Error during authorization: {}", e.getMessage(), e);
+            return new AuthResponse("Authorization error", Status.STATUS_400);
         }
-        catch (IOException | ClassNotFoundException e){
-            log.error(e.getMessage());
-        }
-        return null;
     }
 
-    public void register(String login, byte[] passwordHash){
-        User user = new User(login, passwordHash);
+    private void register(String login, byte[] password) throws NoSuchAlgorithmException {
+        byte[] salt = PasswordHasher.generateSalt();
+        byte[] hashedPassword = PasswordHasher.hashPassword(password, salt);
+        User user = new User(login, hashedPassword, salt);
         dataBaseHandler.create(user, Tables.USERS);
-        System.out.println("Add user " + user);
+        log.info("User {} added to the database", user.getLogin());
     }
 }

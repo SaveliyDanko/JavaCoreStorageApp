@@ -1,26 +1,21 @@
 package com.savadanko.server;
 
 import com.savadanko.server.database.DataBaseHandler;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.io.IOException;
 
 public class ServerApp {
-    private static final Logger logger = LogManager.getLogger(ServerApp.class);
-
     public static void main(String[] args) {
         DataBaseHandler dataBaseHandler = DataBaseHandler.getInstance();
         dataBaseHandler.connect();
-
         try {
-            ServerManager networkManager = new ServerManager();
-            networkManager.start();
+            if (args.length != 2){
+                throw new Exception("Invalid args");
+            }
+            int port = Integer.parseInt(args[0]);
+            ServerManager serverManager = new ServerManager(port);
+            serverManager.start();
+            Runtime.getRuntime().addShutdownHook(new Thread(serverManager::stop));
+        } catch (Exception e) {
+            System.err.println("Failed to start the server: " + e.getMessage());
         }
-        catch (IOException e){
-            logger.error(e.getMessage());
-        }
-
-        //dataBaseHandler.disconnect();
     }
 }

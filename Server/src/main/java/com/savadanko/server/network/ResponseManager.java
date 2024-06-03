@@ -11,12 +11,9 @@ import java.net.Socket;
 import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 
-public class ResponseManager implements Runnable{
-
-
+public class ResponseManager implements Runnable {
     private static final Logger log = LoggerFactory.getLogger(ResponseManager.class);
     private final BlockingQueue<CommandResponse> commandResponses;
-
     private final Map<Socket, ObjectStreams> objectStreamMap;
 
     public ResponseManager(BlockingQueue<CommandResponse> commandResponses, Map<Socket, ObjectStreams> objectStreamMap) {
@@ -27,17 +24,47 @@ public class ResponseManager implements Runnable{
     @Override
     public void run() {
         try {
-            while (true){
+            while (!Thread.currentThread().isInterrupted()) {
                 CommandResponse commandResponse = commandResponses.take();
                 Response response = new Response(commandResponse.getMessage());
 
-                ObjectOutputStream out = objectStreamMap.get(commandResponse.getSocket()).getOut();
-                out.writeObject(response);
-                out.flush();
+                Socket socket = commandResponse.getSocket();
+                ObjectOutputStream out = objectStreamMap.get(socket).getOut();
+
+                try {
+                    out.writeObject(response);
+                    out.flush();
+                } catch (IOException e) {
+                    log.error("Error sending response to client: {}", e.getMessage(), e);
+                    closeSocket(socket);
+                }
             }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            log.info("ResponseManager was interrupted and is stopping.");
+        } catch (Exception e) {
+            log.error("Unexpected error in ResponseManager: {}", e.getMessage(), e);
+        } finally {
+            cleanUp();
         }
-        catch (IOException | InterruptedException e){
-            log.error(e.getMessage());
+    }
+
+    private void closeSocket(Socket socket) {
+        try {
+            if (!socket.isClosed()) {
+                socket.close();
+                objectStreamMap.remove(socket);
+                log.info("Socket closed and removed from map.");
+            }
+        } catch (IOException e) {
+            log.error("Error closing socket: {}", e.getMessage(), e);
         }
+    }
+
+    private void cleanUp() {
+        for (Socket socket : objectStreamMap.keySet()) {
+            closeSocket(socket);
+        }
+        log.info("ResponseManager cleanup completed.");
     }
 }

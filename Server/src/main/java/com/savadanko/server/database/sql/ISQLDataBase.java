@@ -1,8 +1,6 @@
 package com.savadanko.server.database.sql;
 
-import java.sql.SQLException;
 import java.util.LinkedHashMap;
-import java.util.List;
 
 public interface ISQLDataBase {
     void connect(String url, String user, String pass);

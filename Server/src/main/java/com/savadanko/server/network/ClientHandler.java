@@ -2,7 +2,6 @@ package com.savadanko.server.network;
 
 import com.savadanko.common.dto.AuthResponse;
 import com.savadanko.common.dto.Request;
-import com.savadanko.common.dto.Response;
 import com.savadanko.common.dto.Status;
 import com.savadanko.server.command.CommandFactory;
 import com.savadanko.server.command.CommandRequest;
@@ -23,8 +22,8 @@ public class ClientHandler implements Runnable {
     private final ObjectInputStream in;
     private final ObjectOutputStream out;
     private final CommandFactory commandFactory;
-    BlockingQueue<CommandRequest> requests;
-    AuthManager authManager;
+    private final BlockingQueue<CommandRequest> requests;
+    private final AuthManager authManager;
 
     public ClientHandler(Socket socket, Map<Socket, ObjectStreams> objectStreamMap, BlockingQueue<CommandRequest> requests, CommandFactory commandFactory) throws IOException {
         this.socket = socket;
@@ -39,24 +38,51 @@ public class ClientHandler implements Runnable {
     @Override
     public void run() {
         try {
-            while (true){
-                AuthResponse response = authManager.authorization(in, commandFactory);
-                if (response.getStatus().equals(Status.STATUS_200)){
-                    out.writeObject(response);
-                    out.flush();
-                    break;
-                }
-                out.writeObject(response);
-                out.flush();
+            if (authenticate()) {
+                processRequests();
             }
-            while (true){
-                Request request = (Request) in.readObject();
-                CommandRequest commandRequest = new CommandRequest(socket, request);
-                requests.put(commandRequest);
+        } catch (IOException | ClassNotFoundException | InterruptedException e) {
+            log.error("Error handling client: {}", e.getMessage(), e);
+        } finally {
+            closeResources();
+        }
+    }
+
+    private boolean authenticate() throws IOException, ClassNotFoundException {
+        while (true) {
+            AuthResponse response = authManager.authorization(in, commandFactory);
+            out.writeObject(response);
+            out.flush();
+
+            if (response.getStatus().equals(Status.STATUS_200)) {
+                return true;
             }
         }
-        catch (IOException | ClassNotFoundException | InterruptedException e){
-            log.error(e.getMessage());
+    }
+
+    private void processRequests() throws IOException, ClassNotFoundException, InterruptedException {
+        while (true) {
+            Request request = (Request) in.readObject();
+            CommandRequest commandRequest = new CommandRequest(socket, request);
+            requests.put(commandRequest);
+        }
+    }
+
+    private void closeResources() {
+        try {
+            in.close();
+        } catch (IOException e) {
+            log.error("Error closing input stream: {}", e.getMessage(), e);
+        }
+        try {
+            out.close();
+        } catch (IOException e) {
+            log.error("Error closing output stream: {}", e.getMessage(), e);
+        }
+        try {
+            socket.close();
+        } catch (IOException e) {
+            log.error("Error closing socket: {}", e.getMessage(), e);
         }
     }
 }

@@ -19,7 +19,7 @@ public class DataBaseHandler implements IDataBaseHandler {
 
     private final ISQLDataBase dataBase;
 
-    private ICollectionHandler collectionHandler;
+    private final ICollectionHandler collectionHandler;
 
     private DataBaseHandler(){
         this.dataBase = SQLDataBase.getInstance(new SQLObjectHandler());
@@ -55,7 +55,9 @@ public class DataBaseHandler implements IDataBaseHandler {
     }
 
     public long create(Object object, Tables table){
-        return dataBase.create(object, table);
+        long id = dataBase.create(object, table);
+        collectionHandler.create(id, object, table);
+        return id;
     }
 
     public Object read(long id, Tables collections){

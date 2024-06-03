@@ -10,41 +10,60 @@ import com.savadanko.server.network.ResponseManager;
 
 import java.io.IOException;
 import java.net.Socket;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.*;
 
 public class ServerManager {
     private final BlockingQueue<CommandRequest> requests;
     private final BlockingQueue<CommandResponse> responses;
     private final Map<Socket, ObjectStreams> objectStreamMap;
 
-    ExecutorService commandExecutorService;
-    ExecutorService responseExecutorService;
+    private final ExecutorService commandExecutorService;
+    private final ExecutorService responseExecutorService;
+    private final ExecutorService connectionExecutorService;
 
-    ConnectionManager connectionManager;
+    private final ConnectionManager connectionManager;
+    private final CommandFactory commandFactory;
 
-    CommandFactory commandFactory;
-
-    public ServerManager() throws IOException {
+    public ServerManager(int port) throws IOException {
         this.requests = new LinkedBlockingQueue<>();
         this.responses = new LinkedBlockingQueue<>();
-        this.objectStreamMap = new HashMap<>();
+        this.objectStreamMap = new ConcurrentHashMap<>();
 
         this.commandExecutorService = Executors.newFixedThreadPool(10);
         this.responseExecutorService = Executors.newFixedThreadPool(10);
+        this.connectionExecutorService = Executors.newSingleThreadExecutor();
 
         this.commandFactory = new CommandFactory();
 
-        this.connectionManager = new ConnectionManager(requests, objectStreamMap, commandFactory);
+        this.connectionManager = new ConnectionManager(port, requests, objectStreamMap, commandFactory);
     }
 
-    public void start(){
-        new Thread(connectionManager).start();
+    public void start() {
+        connectionExecutorService.execute(connectionManager);
         commandExecutorService.execute(new CommandExecutor(requests, responses, commandFactory));
         responseExecutorService.execute(new ResponseManager(responses, objectStreamMap));
+    }
+
+    public void stop() {
+        try {
+            connectionManager.shutdown();
+            shutdownExecutorService(commandExecutorService);
+            shutdownExecutorService(responseExecutorService);
+            shutdownExecutorService(connectionExecutorService);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.err.println("ServerManager was interrupted during shutdown: " + e.getMessage());
+        }
+    }
+
+    private void shutdownExecutorService(ExecutorService executorService) throws InterruptedException {
+        executorService.shutdown();
+        if (!executorService.awaitTermination(30, TimeUnit.SECONDS)) {
+            executorService.shutdownNow();
+            if (!executorService.awaitTermination(30, TimeUnit.SECONDS)) {
+                System.err.println("Executor service did not terminate");
+            }
+        }
     }
 }

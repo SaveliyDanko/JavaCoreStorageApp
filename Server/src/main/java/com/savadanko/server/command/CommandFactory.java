@@ -24,6 +24,7 @@ public class CommandFactory {
         commandMap.put(ECommand.INFO.getName(), InfoCommand.class);
         commandMap.put(ECommand.UPDATE.getName(), UpdateCommand.class);
         commandMap.put(ECommand.CLEAR.getName(), ClearCommand.class);
+        commandMap.put(ECommand.HISTORY.getName(), HistoryCommand.class);
 
         commandPropertiesMap.put(ECommand.HELP.getName(), new CommandProperties(0, false));
         commandPropertiesMap.put(ECommand.INSERT.getName(), new CommandProperties(0, true));
@@ -32,6 +33,7 @@ public class CommandFactory {
         commandPropertiesMap.put(ECommand.INFO.getName(), new CommandProperties(0, false));
         commandPropertiesMap.put(ECommand.UPDATE.getName(), new CommandProperties(1, true));
         commandPropertiesMap.put(ECommand.CLEAR.getName(), new CommandProperties(0, false));
+        commandPropertiesMap.put(ECommand.HISTORY.getName(), new CommandProperties(0, false));
     }
 
 }

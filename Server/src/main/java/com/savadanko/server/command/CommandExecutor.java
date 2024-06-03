@@ -2,15 +2,18 @@ package com.savadanko.server.command;
 
 import com.savadanko.common.models.Flat;
 import com.savadanko.server.command.commands.Command;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.BlockingQueue;
 
-public class CommandExecutor implements Runnable{
+public class CommandExecutor implements Runnable {
+    private static final Logger log = LoggerFactory.getLogger(CommandExecutor.class);
     private final BlockingQueue<CommandRequest> requests;
     private final BlockingQueue<CommandResponse> responses;
-
     private final CommandFactory commandFactory;
+    CommandHistory commandHistory;
 
     public CommandExecutor(BlockingQueue<CommandRequest> requests,
                            BlockingQueue<CommandResponse> responses,
@@ -18,54 +21,57 @@ public class CommandExecutor implements Runnable{
 
         this.requests = requests;
         this.responses = responses;
-
         this.commandFactory = commandFactory;
+        this.commandHistory = CommandHistory.getInstance();
     }
 
     @Override
     public void run() {
         try {
-            while (true) {
+            while (!Thread.currentThread().isInterrupted()) {
                 CommandRequest commandRequest = requests.take();
                 Class<?> commandClass = commandFactory
                         .getCommandMap()
-                        .get(commandRequest
-                                .getRequest()
-                                .getCommand());
+                        .get(commandRequest.getRequest().getCommand());
 
                 if (commandClass != null) {
-                    Object object = commandClass
-                            .getDeclaredConstructor(
-                                    String[].class,
-                                    Flat.class,
-                                    String.class)
-                            .newInstance(
-                                    commandRequest.getRequest().getArgs(),
-                                    commandRequest.getRequest().getFlat(),
-                                    commandRequest.getRequest().getUserLogin());
+                    try {
+                        Object object = commandClass
+                                .getDeclaredConstructor(
+                                        String[].class,
+                                        Flat.class,
+                                        String.class)
+                                .newInstance(
+                                        commandRequest.getRequest().getArgs(),
+                                        commandRequest.getRequest().getFlat(),
+                                        commandRequest.getRequest().getUserLogin());
 
-                    Command command = (Command) object;
+                        Command command = (Command) object;
+                        CommandResponse commandResponse = new CommandResponse(
+                                commandRequest.getSocket(),
+                                command.execute().getMessage());
 
-                    CommandResponse commandResponse = new CommandResponse(
-                            commandRequest.getSocket(),
-                            command.execute().getMessage());
+                        commandHistory.addCommand(commandRequest.getRequest().getCommand());
 
-                    responses.put(commandResponse);
+                        responses.put(commandResponse);
+                    } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+                        log.error("Error instantiating command: {}", e.getMessage(), e);
+                        CommandResponse commandResponse = new CommandResponse(
+                                commandRequest.getSocket(),
+                                "Error executing command: " + e.getMessage());
+                        responses.put(commandResponse);
+                    }
                 } else {
-                    System.err.println("Command not found: " + commandRequest.getRequest().getCommand());
-
+                    log.warn("Command not found: {}", commandRequest.getRequest().getCommand());
                     CommandResponse commandResponse = new CommandResponse(
                             commandRequest.getSocket(),
                             "Command not found: " + commandRequest.getRequest().getCommand());
-
                     responses.put(commandResponse);
                 }
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            System.err.println("CommandExecutor interrupted");
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
-            System.err.println("Error instantiating command: " + e.getMessage());
+            log.info("CommandExecutor interrupted");
         }
     }
 }

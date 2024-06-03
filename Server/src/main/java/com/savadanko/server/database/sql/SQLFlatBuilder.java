@@ -1,6 +1,7 @@
 package com.savadanko.server.database.sql;
 
 import com.savadanko.common.models.*;
+import lombok.Setter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,16 +11,13 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.LinkedHashMap;
 
-public class SQLFlatBuilder implements ModelBuilder{
+@Setter
+public class SQLFlatBuilder implements ModelBuilder<Flat>{
     private static final Logger logger = LogManager.getLogger(SQLDataBase.class);
 
     private Connection connection;
 
     public SQLFlatBuilder(){
-    }
-
-    public void setConnection(Connection connection) {
-        this.connection = connection;
     }
 
     public void createTables(){
@@ -90,14 +88,13 @@ public class SQLFlatBuilder implements ModelBuilder{
         }
     }
 
-    public long createModel(Object f){
-        Flat flat = (Flat) f;
+    public long createModel(Flat flat){
         long cordsId = saveCoordinates(flat.getCoordinates());
         long houseId = saveHouse(flat.getHouse());
         return saveFlat(flat, cordsId, houseId);
     }
 
-    public Object readModel(long id){
+    public Flat readModel(long id){
         String query = "select * from flats " +
                 "join coordinates on flats.coordinates_id = coordinates.id " +
                 "join houses on flats.house_id = houses.id " +
@@ -155,12 +152,12 @@ public class SQLFlatBuilder implements ModelBuilder{
     }
 
     @Override
-    public LinkedHashMap<Long, Object> readAll() {
+    public LinkedHashMap<Long, Flat> readAll() {
         String query = "SELECT * FROM flats " +
                 "JOIN houses ON house_id = houses.id " +
                 "JOIN coordinates ON coordinates_id = coordinates.id;";
 
-        LinkedHashMap<Long, Object> linkedHashMap = new LinkedHashMap<>();
+        LinkedHashMap<Long, Flat> linkedHashMap = new LinkedHashMap<>();
 
         try(PreparedStatement statement = connection.prepareStatement(query)){
             try (ResultSet resultSet = statement.executeQuery()){
@@ -216,8 +213,7 @@ public class SQLFlatBuilder implements ModelBuilder{
     }
 
     @Override
-    public void updateModel(long id, Object object) {
-        Flat flat = (Flat) object;
+    public void updateModel(long id, Flat flat) {
         updateHouse(id, flat);
         updateCoordinates(id, flat);
         updateFlat(id, flat);

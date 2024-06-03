@@ -2,11 +2,12 @@ package com.savadanko.server.database.sql;
 
 import java.util.LinkedHashMap;
 
-public interface ModelBuilder {
+public interface ModelBuilder<T> {
     void createTables();
-    long createModel(Object obj);
-    Object readModel(long id);
-    LinkedHashMap<Long, Object> readAll();
-    void updateModel(long id, Object obj);
+    long createModel(T obj);
+    T readModel(long id);
+    LinkedHashMap<Long, T> readAll();
+    void updateModel(long id, T obj);
     void deleteModel(long id);
 }
+

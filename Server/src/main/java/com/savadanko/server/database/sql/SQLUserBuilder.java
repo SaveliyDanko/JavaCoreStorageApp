@@ -1,13 +1,15 @@
 package com.savadanko.server.database.sql;
 
 import com.savadanko.common.models.User;
+import lombok.Setter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.*;
 import java.util.LinkedHashMap;
 
-public class SQLUserBuilder implements ModelBuilder {
+@Setter
+public class SQLUserBuilder implements ModelBuilder<User> {
     private static final Logger logger = LogManager.getLogger(SQLUserBuilder.class);
 
     private Connection connection;
@@ -15,15 +17,12 @@ public class SQLUserBuilder implements ModelBuilder {
     public SQLUserBuilder() {
     }
 
-    public void setConnection(Connection connection) {
-        this.connection = connection;
-    }
-
     public void createTables() {
         String usersTable = "CREATE TABLE IF NOT EXISTS users (" +
                 "id SERIAL PRIMARY KEY," +
                 "login VARCHAR(128) UNIQUE," +
-                "password BYTEA);";
+                "password BYTEA," +
+                "salt BYTEA);"; // Добавлено поле salt
 
         try (PreparedStatement statement = connection.prepareStatement(usersTable)) {
             statement.execute();
@@ -33,13 +32,13 @@ public class SQLUserBuilder implements ModelBuilder {
     }
 
     @Override
-    public long createModel(Object object) {
-        User user = (User) object;
-        String query = "INSERT INTO users (login, password) VALUES (?, ?);";
+    public long createModel(User user) {
+        String query = "INSERT INTO users (login, password, salt) VALUES (?, ?, ?);"; // Добавлено поле salt
 
         try (PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, user.getLogin());
             statement.setBytes(2, user.getPasswordHash());
+            statement.setBytes(3, user.getSalt()); // Установка значения salt
 
             statement.executeUpdate();
 
@@ -57,20 +56,18 @@ public class SQLUserBuilder implements ModelBuilder {
     }
 
     @Override
-    public Object readModel(long id) {
+    public User readModel(long id) {
         String query = "SELECT * FROM users WHERE id = ?;";
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setLong(1, id);
             try (ResultSet resultSet = statement.executeQuery()) {
-                while (resultSet.next()) {
+                if (resultSet.next()) {
                     long userId = resultSet.getLong("id");
                     String login = resultSet.getString("login");
                     byte[] passwordHash = resultSet.getBytes("password");
-
-                    User user = new User(login, passwordHash);
-                    user.setId(userId);
-                    return user;
+                    byte[] salt = resultSet.getBytes("salt"); // Чтение значения salt
+                    return new User(userId, login, passwordHash, salt);
                 }
             }
         } catch (SQLException e) {
@@ -80,10 +77,10 @@ public class SQLUserBuilder implements ModelBuilder {
     }
 
     @Override
-    public LinkedHashMap<Long, Object> readAll() {
+    public LinkedHashMap<Long, User> readAll() {
         String query = "SELECT * FROM users;";
 
-        LinkedHashMap<Long, Object> linkedHashMap = new LinkedHashMap<>();
+        LinkedHashMap<Long, User> linkedHashMap = new LinkedHashMap<>();
 
         try(PreparedStatement statement = connection.prepareStatement(query)){
             try(ResultSet resultSet = statement.executeQuery()){
@@ -91,8 +88,9 @@ public class SQLUserBuilder implements ModelBuilder {
                     long userId = resultSet.getLong("id");
                     String login = resultSet.getString("login");
                     byte[] passwordHash = resultSet.getBytes("password");
+                    byte[] salt = resultSet.getBytes("salt"); // Чтение значения salt
 
-                    User user = new User(userId, login, passwordHash);
+                    User user = new User(userId, login, passwordHash, salt);
 
                     linkedHashMap.put(userId, user);
                 }
@@ -105,14 +103,14 @@ public class SQLUserBuilder implements ModelBuilder {
     }
 
     @Override
-    public void updateModel(long id, Object object) {
-        String query = "UPDATE users SET login = ?, password = ? WHERE id = ?";
+    public void updateModel(long id, User user) {
+        String query = "UPDATE users SET login = ?, password = ?, salt = ? WHERE id = ?"; // Добавлено поле salt
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
-            User user = (User) object;
             statement.setString(1, user.getLogin());
             statement.setBytes(2, user.getPasswordHash());
-            statement.setLong(3, id);
+            statement.setBytes(3, user.getSalt()); // Установка значения salt
+            statement.setLong(4, id);
 
             statement.executeUpdate();
         } catch (SQLException e) {

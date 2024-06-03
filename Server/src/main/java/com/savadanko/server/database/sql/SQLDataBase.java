@@ -1,6 +1,5 @@
 package com.savadanko.server.database.sql;
 
-import com.savadanko.common.models.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

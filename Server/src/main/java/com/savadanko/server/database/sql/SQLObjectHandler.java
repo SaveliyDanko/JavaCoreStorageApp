@@ -1,5 +1,8 @@
 package com.savadanko.server.database.sql;
 
+import com.savadanko.common.models.Flat;
+import com.savadanko.common.models.User;
+
 import java.sql.Connection;
 import java.util.LinkedHashMap;
 
@@ -26,10 +29,10 @@ public class SQLObjectHandler implements ModelHandler{
     @Override
     public long createModel(Object obj, Tables table) {
         if (table.equals(Tables.FLATS)){
-            return flatBuilder.createModel(obj);
+            return flatBuilder.createModel((Flat) obj);
         }
         else if (table.equals(Tables.USERS)){
-            return userBuilder.createModel(obj);
+            return userBuilder.createModel((User) obj);
         }
         return 0;
     }
@@ -48,10 +51,10 @@ public class SQLObjectHandler implements ModelHandler{
     @Override
     public LinkedHashMap<Long, Object> readAll(Tables table) {
         if (table.equals(Tables.FLATS)){
-            return flatBuilder.readAll();
+            return new LinkedHashMap<>(flatBuilder.readAll());
         }
         else if (table.equals(Tables.USERS)){
-            return userBuilder.readAll();
+            return new LinkedHashMap<>(userBuilder.readAll());
         }
         return null;
     }
@@ -59,10 +62,10 @@ public class SQLObjectHandler implements ModelHandler{
     @Override
     public void updateModel(long id, Object obj, Tables tables) {
         if (tables.equals(Tables.FLATS)){
-            flatBuilder.updateModel(id, obj);
+            flatBuilder.updateModel(id, (Flat) obj);
         }
         else if (tables.equals(Tables.USERS)){
-            userBuilder.updateModel(id, obj);
+            userBuilder.updateModel(id, (User) obj);
         }
     }
 
