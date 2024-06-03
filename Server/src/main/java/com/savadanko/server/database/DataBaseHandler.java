@@ -61,12 +61,12 @@ public class DataBaseHandler implements IDataBaseHandler {
     }
 
     public Object read(long id, Tables collections){
-        return collectionHandler.read(id, collections);
+        return dataBase.read(id, collections);
     }
 
     @Override
     public LinkedHashMap<Long, Object> readAll(Tables collections) {
-        return collectionHandler.readAll(collections);
+        return dataBase.readAll(collections);
     }
 
     public void update(long id, Object object, Tables table){

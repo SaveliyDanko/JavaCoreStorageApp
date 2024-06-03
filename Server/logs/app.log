@@ -1,6 +1,0 @@
-2024-05-23 03:24:48 DEBUG ServerApp:11 - This is a debug message
-2024-05-23 03:24:48 INFO  ServerApp:12 - This is an info message
-2024-05-23 03:24:48 WARN  ServerApp:13 - This is a warn message
-2024-05-23 03:24:48 ERROR ServerApp:14 - This is an error message
-2024-05-23 03:24:48 FATAL ServerApp:15 - This is a fatal message
-2024-05-23 03:27:57 ERROR SQLDataBase:32 - Data Base Connection

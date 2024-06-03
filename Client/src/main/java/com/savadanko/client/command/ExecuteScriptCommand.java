@@ -7,7 +7,6 @@ import com.savadanko.client.input.InputMode;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -22,8 +21,8 @@ public class ExecuteScriptCommand implements ClientCommand {
     }
 
     @Override
-    public void execute() throws ExecuteScriptException{
-        if (command.split(" ").length == 2){
+    public void execute() throws ExecuteScriptException {
+        if (command.split(" ").length == 2) {
             String fileName = command.split(" ")[1];
             String classLocation = ExecuteScriptCommand.class.getProtectionDomain().getCodeSource().getLocation().toString();
             classLocation = classLocation.substring(5);
@@ -31,14 +30,15 @@ public class ExecuteScriptCommand implements ClientCommand {
             array.removeLast();
             classLocation = String.join(File.separator, array);
             String path = classLocation + File.separator + fileName;
-
+            path = "/home/savadanko/Java/JavaStorageApp/Client/src/main/resources/script.txt";
             try {
-                if (FileInput.filesSet.add(path)){
+                if (FileInput.filesSet.add(path)) {
                     FileInput.addFile(path);
                     currentInput.setInputMode(InputMode.FILE_MODE);
+                } else {
+                    throw new IOException("For avoid recursion, you can't execute file twice");
                 }
-            }
-            catch (IOException e){
+            } catch (IOException e) {
                 throw new ExecuteScriptException(e.getMessage());
             }
         }

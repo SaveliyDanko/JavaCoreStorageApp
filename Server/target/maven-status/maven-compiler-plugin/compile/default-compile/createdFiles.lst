@@ -32,6 +32,7 @@ com/savadanko/server/database/sql/SQLDataBase.class
 com/savadanko/server/database/sql/SQLObjectHandler.class
 com/savadanko/server/network/authorization/AuthRequest.class
 com/savadanko/server/database/collections/FlatCollection.class
+com/savadanko/server/command/commands/FilterStartsWithNameCommand.class
 com/savadanko/server/database/sql/ModelBuilder.class
 com/savadanko/server/command/commands/ClearCommand.class
 com/savadanko/server/command/ECommand.class

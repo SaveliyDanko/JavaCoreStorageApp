@@ -8,6 +8,7 @@ import com.savadanko.client.exceptions.ExecuteScriptException;
 import com.savadanko.client.exceptions.InvalidAuthException;
 import com.savadanko.client.exceptions.UnknownCommandException;
 import com.savadanko.client.input.CurrentInput;
+import com.savadanko.client.input.FileInput;
 import com.savadanko.client.input.InputMode;
 import com.savadanko.client.requestmanager.RequestBuilder;
 import com.savadanko.common.dto.AuthResponse;
@@ -43,12 +44,15 @@ public class ClientManager {
                 if (connectionManager.getSocket() != null) {
                     authManager = new AuthManager(currentInput, connectionManager.getOut(), connectionManager.getIn());
                     authResponse = authManager.start();
+                    System.out.println(authResponse.getMessage());
                 }
 
                 while (currentInput.hasNextLine()) {
                     String command = currentInput.getNextLine().trim();
-                    if (currentInput.getInputMode().equals(InputMode.FILE_MODE) && !currentInput.hasNextLine()){
+                    if (currentInput.getInputMode().equals(InputMode.FILE_MODE) && !currentInput.hasNextLine()) {
                         currentInput.setInputMode(InputMode.USER_MODE);
+                        FileInput.clear();
+                        continue;
                     }
 
                     if ("exit".equalsIgnoreCase(command)) {
@@ -57,14 +61,8 @@ public class ClientManager {
                     }
 
                     try {
-                        try {
-                            if ("execute".equalsIgnoreCase(command.split(" ")[0])){
-                                new ExecuteScriptCommand(currentInput, command).execute();
-                                continue;
-                            }
-                        }
-                        catch (ExecuteScriptException e){
-                            System.out.println(e.getMessage());
+                        if ("execute_script".equalsIgnoreCase(command.split(" ")[0])) {
+                            new ExecuteScriptCommand(currentInput, command).execute();
                             continue;
                         }
                         Request request = new RequestBuilder()
@@ -75,7 +73,7 @@ public class ClientManager {
 
                         Response response = (Response) connectionManager.getIn().readObject();
                         System.out.println(response.getMessage());
-                    } catch (UnknownCommandException | IllegalArgumentException e) {
+                    } catch (UnknownCommandException | IllegalArgumentException | ExecuteScriptException e) {
                         log.error(e.getMessage());
                         System.out.println(e.getMessage());
                     }

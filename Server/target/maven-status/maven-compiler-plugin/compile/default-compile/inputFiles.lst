@@ -9,6 +9,7 @@
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/ClearCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/Command.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/DeleteCommand.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/FilterStartsWithNameCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/HelpCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/HistoryCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/InfoCommand.java

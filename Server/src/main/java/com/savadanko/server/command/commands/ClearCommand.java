@@ -20,7 +20,6 @@ public class ClearCommand implements Command {
         DataBaseHandler dataBaseHandler = DataBaseHandler.getInstance();
         List<Flat> toRemove = new ArrayList<>();
 
-        // Сначала соберем элементы для удаления
         for (Object o : dataBaseHandler.readAll(Tables.FLATS).values()) {
             Flat f = (Flat) o;
             if (f.getOwner().equals(userLogin)) {
@@ -28,7 +27,6 @@ public class ClearCommand implements Command {
             }
         }
 
-        // Теперь удалим их
         for (Flat f : toRemove) {
             dataBaseHandler.delete(f.getId(), Tables.FLATS);
         }
