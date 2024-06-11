@@ -7,21 +7,20 @@ import com.savadanko.client.input.UserInput;
 
 public class ClientApp {
     public static void main(String[] args){
-//        if (args.length == 1){
-//            try{
-//                int port = Integer.parseInt(args[0]);
-//            }
-//            catch (NumberFormatException e){
-//                System.out.println("Port must be number value");
-//                System.exit(0);
-//            }
-        int port = 8888;
+        if (args.length == 1){
+            try{
+                Integer.parseInt(args[0]);
+            }
+            catch (NumberFormatException e){
+                System.out.println("Port must be number value");
+                System.exit(0);
+            }
             new ClientManager(new ConnectionManager(),
                     new CurrentInput(
                             new UserInput(),
                             new FileInput()
-                    )).start(port);
-//        }
-//        System.exit(0);
+                    )).start(Integer.parseInt(args[0]));
+        }
+        System.exit(0);
     }
 }

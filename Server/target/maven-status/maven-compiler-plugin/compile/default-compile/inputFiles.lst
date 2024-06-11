@@ -8,12 +8,16 @@
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/ECommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/ClearCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/Command.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/CountByTransportCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/DeleteCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/FilterStartsWithNameCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/HelpCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/HistoryCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/InfoCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/InsertCommand.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/MinByNameCommand.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/RemoveGreaterKey.java
+/home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/RemoveLower.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/ShowCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/command/commands/UpdateCommand.java
 /home/savadanko/Java/JavaStorageApp/Server/src/main/java/com/savadanko/server/database/DataBaseHandler.java

@@ -7,11 +7,10 @@ public class ServerApp {
         DataBaseHandler dataBaseHandler = DataBaseHandler.getInstance();
         dataBaseHandler.connect();
         try {
-//            if (args.length != 1){
-//                throw new Exception("Invalid args");
-//            }
-//            int port = Integer.parseInt(args[0]);
-            int port = 8888;
+            if (args.length != 1){
+                throw new Exception("Invalid args");
+            }
+            int port = Integer.parseInt(args[0]);
             ServerManager serverManager = new ServerManager(port);
             serverManager.start();
             Runtime.getRuntime().addShutdownHook(new Thread(serverManager::stop));

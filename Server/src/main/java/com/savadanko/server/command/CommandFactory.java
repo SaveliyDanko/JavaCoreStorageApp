@@ -26,6 +26,10 @@ public class CommandFactory {
         commandMap.put(ECommand.CLEAR.getName(), ClearCommand.class);
         commandMap.put(ECommand.HISTORY.getName(), HistoryCommand.class);
         commandMap.put(ECommand.FILTER_STARTS_WITH_NAME.getName(), FilterStartsWithNameCommand.class);
+        commandMap.put(ECommand.REMOVE_GREATER_KEY.getName(), RemoveGreaterKey.class);
+        commandMap.put(ECommand.REMOVE_LOWER.getName(), RemoveLower.class);
+        commandMap.put(ECommand.COUNT_BY_TRANSPORT.getName(), CountByTransportCommand.class);
+        commandMap.put(ECommand.MIN_BY_NAME.getName(), MinByNameCommand.class);
 
         commandPropertiesMap.put(ECommand.HELP.getName(), new CommandProperties(0, false));
         commandPropertiesMap.put(ECommand.INSERT.getName(), new CommandProperties(0, true));
@@ -36,6 +40,10 @@ public class CommandFactory {
         commandPropertiesMap.put(ECommand.CLEAR.getName(), new CommandProperties(0, false));
         commandPropertiesMap.put(ECommand.HISTORY.getName(), new CommandProperties(0, false));
         commandPropertiesMap.put(ECommand.FILTER_STARTS_WITH_NAME.getName(), new CommandProperties(1, false));
+        commandPropertiesMap.put(ECommand.REMOVE_GREATER_KEY.getName(), new CommandProperties(0, false));
+        commandPropertiesMap.put(ECommand.REMOVE_LOWER.getName(), new CommandProperties(0, false));
+        commandPropertiesMap.put(ECommand.COUNT_BY_TRANSPORT.getName(), new CommandProperties(0, true));
+        commandPropertiesMap.put(ECommand.MIN_BY_NAME.getName(), new CommandProperties(0, true));
     }
 
 }
