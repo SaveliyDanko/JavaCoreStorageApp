@@ -2,6 +2,7 @@ package com.savadanko.common.models;
 
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
@@ -14,6 +15,7 @@ import java.io.Serializable;
  */
 @Setter
 @Getter
+@NoArgsConstructor
 public class Coordinates implements Serializable {
 
     private long id;

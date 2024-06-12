@@ -30,6 +30,7 @@ public class CommandFactory {
         commandMap.put(ECommand.REMOVE_LOWER.getName(), RemoveLower.class);
         commandMap.put(ECommand.COUNT_BY_TRANSPORT.getName(), CountByTransportCommand.class);
         commandMap.put(ECommand.MIN_BY_NAME.getName(), MinByNameCommand.class);
+        commandMap.put(ECommand.SYNC.getName(), SyncCommand.class);
 
         commandPropertiesMap.put(ECommand.HELP.getName(), new CommandProperties(0, false));
         commandPropertiesMap.put(ECommand.INSERT.getName(), new CommandProperties(0, true));
@@ -44,6 +45,7 @@ public class CommandFactory {
         commandPropertiesMap.put(ECommand.REMOVE_LOWER.getName(), new CommandProperties(0, false));
         commandPropertiesMap.put(ECommand.COUNT_BY_TRANSPORT.getName(), new CommandProperties(0, true));
         commandPropertiesMap.put(ECommand.MIN_BY_NAME.getName(), new CommandProperties(0, true));
+        commandPropertiesMap.put(ECommand.SYNC.getName(), new CommandProperties(0, false));
     }
 
 }

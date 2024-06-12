@@ -18,7 +18,8 @@ public enum ECommand {
     REMOVE_GREATER_KEY("remove_greater_key", "удалить из коллекции все элементы, ключ которых превышает заданный"),
     MIN_BY_NAME("min_by_name", "вывести любой объект из коллекции, значение поля name которого является минимальным"),
     COUNT_BY_TRANSPORT("count_by_transport", "вывести количество элементов, значение поля transport которых равно заданному"),
-    FILTER_STARTS_WITH_NAME("filter_starts_with_name", "вывести элементы, значение поля name которых начинается с заданной подстроки");
+    FILTER_STARTS_WITH_NAME("filter_starts_with_name", "вывести элементы, значение поля name которых начинается с заданной подстроки"),
+    SYNC("sync", "команда для синхронизации с базой данных");
 
     private final String name;
     private final String description;

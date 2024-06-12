@@ -1,26 +1,25 @@
 package com.savadanko.client;
 
-import com.savadanko.client.connection.ConnectionManager;
-import com.savadanko.client.input.CurrentInput;
-import com.savadanko.client.input.FileInput;
-import com.savadanko.client.input.UserInput;
+import com.savadanko.client.network.PortScene;
+import javafx.application.Application;
+import javafx.stage.Stage;
 
-public class ClientApp {
-    public static void main(String[] args){
-        if (args.length == 1){
-            try{
-                Integer.parseInt(args[0]);
-            }
-            catch (NumberFormatException e){
-                System.out.println("Port must be number value");
-                System.exit(0);
-            }
-            new ClientManager(new ConnectionManager(),
-                    new CurrentInput(
-                            new UserInput(),
-                            new FileInput()
-                    )).start(Integer.parseInt(args[0]));
-        }
-        System.exit(0);
+public class ClientApp extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        showPortScene(primaryStage);
+    }
+
+    private void showPortScene(Stage stage){
+        PortScene loginScene = new PortScene(stage);
+        stage.setTitle("Port Scene");
+        stage.setScene(loginScene.getScene());
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }
+

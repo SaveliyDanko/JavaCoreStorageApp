@@ -6,17 +6,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationTargetException;
+import java.net.Socket;
 import java.util.concurrent.BlockingQueue;
 
 public class CommandExecutor implements Runnable {
     private static final Logger log = LoggerFactory.getLogger(CommandExecutor.class);
     private final BlockingQueue<CommandRequest> requests;
-    private final BlockingQueue<CommandResponse> responses;
+    private final BlockingQueue<SocketCommandResponse> responses;
     private final CommandFactory commandFactory;
     CommandHistory commandHistory;
 
     public CommandExecutor(BlockingQueue<CommandRequest> requests,
-                           BlockingQueue<CommandResponse> responses,
+                           BlockingQueue<SocketCommandResponse> responses,
                            CommandFactory commandFactory) {
 
         this.requests = requests;
@@ -47,26 +48,30 @@ public class CommandExecutor implements Runnable {
                                         commandRequest.getRequest().getUserLogin());
 
                         Command command = (Command) object;
-                        CommandResponse commandResponse = new CommandResponse(
+                        CommandResponse commandResponse = command.execute();
+                        SocketCommandResponse socketCommandResponse = new SocketCommandResponse(
                                 commandRequest.getSocket(),
-                                command.execute().getMessage());
+                                commandResponse.getMessage(),
+                                commandResponse.getFlatMap());
 
                         commandHistory.addCommand(commandRequest.getRequest().getCommand());
 
-                        responses.put(commandResponse);
+                        responses.put(socketCommandResponse);
                     } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
                         log.error("Error instantiating command: {}", e.getMessage(), e);
-                        CommandResponse commandResponse = new CommandResponse(
+                        SocketCommandResponse socketCommandResponse = new SocketCommandResponse(
                                 commandRequest.getSocket(),
-                                "Error executing command: " + e.getMessage());
-                        responses.put(commandResponse);
+                                "Error executing command: " + e.getMessage(),
+                                null);
+                        responses.put(socketCommandResponse);
                     }
                 } else {
                     log.warn("Command not found: {}", commandRequest.getRequest().getCommand());
-                    CommandResponse commandResponse = new CommandResponse(
+                    SocketCommandResponse socketCommandResponse = new SocketCommandResponse(
                             commandRequest.getSocket(),
-                            "Command not found: " + commandRequest.getRequest().getCommand());
-                    responses.put(commandResponse);
+                            "Command not found: " + commandRequest.getRequest().getCommand(),
+                            null);
+                    responses.put(socketCommandResponse);
                 }
             }
         } catch (InterruptedException e) {

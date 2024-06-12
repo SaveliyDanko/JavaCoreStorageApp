@@ -1,5 +1,0 @@
-info
-show
-info
-show
-execute_script file

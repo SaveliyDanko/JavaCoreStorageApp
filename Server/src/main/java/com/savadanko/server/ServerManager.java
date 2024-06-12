@@ -3,7 +3,7 @@ package com.savadanko.server;
 import com.savadanko.server.command.CommandExecutor;
 import com.savadanko.server.command.CommandFactory;
 import com.savadanko.server.command.CommandRequest;
-import com.savadanko.server.command.CommandResponse;
+import com.savadanko.server.command.SocketCommandResponse;
 import com.savadanko.server.network.ConnectionManager;
 import com.savadanko.server.network.ObjectStreams;
 import com.savadanko.server.network.ResponseManager;
@@ -15,7 +15,7 @@ import java.util.concurrent.*;
 
 public class ServerManager {
     private final BlockingQueue<CommandRequest> requests;
-    private final BlockingQueue<CommandResponse> responses;
+    private final BlockingQueue<SocketCommandResponse> responses;
     private final Map<Socket, ObjectStreams> objectStreamMap;
 
     private final ExecutorService commandExecutorService;

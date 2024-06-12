@@ -32,7 +32,11 @@ public class AuthManager {
                     byte[] hashedPassword = PasswordHasher.hashPassword(authDTO.getHashedPassword(), user.getSalt());
                     if (Arrays.equals(user.getPasswordHash(), hashedPassword)) {
                         log.info("User {} authenticated successfully", user.getLogin());
-                        return new AuthResponse("Valid auth", commandFactory.getCommandPropertiesMap(), Status.STATUS_200);
+                        return new AuthResponse(
+                                "Valid auth",
+                                commandFactory.getCommandPropertiesMap(),
+                                dataBaseHandler.readAll(Tables.FLATS),
+                                Status.STATUS_200);
                     } else {
                         log.warn("Invalid password for user {}", user.getLogin());
                         return new AuthResponse("Invalid auth", Status.STATUS_400);
@@ -41,7 +45,11 @@ public class AuthManager {
             }
             register(authDTO.getLogin(), authDTO.getHashedPassword());
             log.info("New user {} registered successfully", authDTO.getLogin());
-            return new AuthResponse("Registration", commandFactory.getCommandPropertiesMap(), Status.STATUS_200);
+            return new AuthResponse(
+                    "Registration",
+                    commandFactory.getCommandPropertiesMap(),
+                    dataBaseHandler.readAll(Tables.FLATS),
+                    Status.STATUS_200);
         } catch (IOException | ClassNotFoundException | NoSuchAlgorithmException e) {
             log.error("Error during authorization: {}", e.getMessage(), e);
             return new AuthResponse("Authorization error", Status.STATUS_400);
