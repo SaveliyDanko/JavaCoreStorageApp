@@ -4,3 +4,4 @@ Common/terget
 Client/logs/app.log
 logs/app.log
 .idea
+Client/lib
